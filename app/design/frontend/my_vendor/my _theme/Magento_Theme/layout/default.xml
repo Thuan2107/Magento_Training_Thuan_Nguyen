@@ -85,10 +85,14 @@
     <referenceContainer name="page.wrapper">
          <block class="Magento\Framework\View\Element\Template" name="banner" template="Magento_Theme::html/home/banner.phtml" />
 
-</referenceContainer>
+    </referenceContainer>
 
-
-           
     <move element="register-link" destination="userlink"  />
     <move element="authorization-link" destination="userlink" />
+
+    <!-- footer -->
+    <referenceContainer name="footer" remove="true" />
+    <referenceContainer name="footer-container">
+        <block class="Magento\Framework\View\Element\Template" name="footer_custom" template="Magento_Theme::html/home/footer.phtml" />
+    </referenceContainer>
 </page>

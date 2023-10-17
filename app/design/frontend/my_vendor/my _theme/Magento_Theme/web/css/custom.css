@@ -1,3 +1,15 @@
+:root {
+    --main-color: #93117B;
+  }
+/* All */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+
+/* Header */
+
 .header.content{
     display: flex;
     justify-content: space-between;
@@ -60,4 +72,168 @@
 .top_category_title{
     font-size: 14px;
     font-weight: 600;
+}
+
+/* Deals Of The Day */
+.deals_of_day_wrapper .product_title{
+    color: var(--main-color);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.deals_of_day_wrapper .product_rate {
+    display: flex;
+    align-items: center;
+}
+
+.deals_of_day_wrapper .product_rate svg{
+    color: #EAB223;
+    margin-right: 4px;
+    font-size: 16px;
+}
+
+.deals_of_day_wrapper .product_rate span{
+    color: #636363;
+}
+
+.deals_of_day_wrapper .product_old_price {
+    text-decoration: line-through;
+}
+
+.deals_of_day_wrapper .product_discount_name svg{
+    color: var(--main-color);
+}
+
+.deals_of_day_wrapper .product_discount_name span{
+    font-weight: 500;
+}
+
+.deals_of_day_wrapper .product_price{
+    color: #F2351B;
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 8px;
+}
+
+.deals_of_day_wrapper .product_discount_percent{
+    background: #F2351B;
+    color: white;
+    padding: 4px;
+    border-radius: 2px
+}
+/*--------------------- Best Sellelr */
+.best_seller_header{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #EDEDED;
+}
+
+.best_seller_header .best_seller_title{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.best_seller_header .best_seller_category{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.best_seller_header .best_seller_category li{
+    margin-right: 8px;
+    size: 14px;
+    font-weight: 500;
+}
+
+.best_seller_header .best_seller_category li:first-child{
+    color: var(--main-color);
+}
+
+.best_seller_wrapper_item .product_title{
+    color: var(--main-color);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.best_seller_wrapper_item .product_rate {
+    display: flex;
+    align-items: center;
+}
+
+.best_seller_wrapper_item .product_rate svg{
+    color: #EAB223;
+    margin-right: 4px;
+    font-size: 16px;
+}
+
+.best_seller_wrapper_item .product_rate span{
+    color: #636363;
+}
+
+.best_seller_wrapper_item .product_old_price {
+    text-decoration: line-through;
+}
+
+.best_seller_wrapper_item .product_price{
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 8px;
+}
+
+/* news */
+.news_wrapper{
+    background-color: #FAD2F2;
+}
+
+.news_title{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.news_label{
+    font-size: 14px;
+    background: #93117B;
+    color: white;
+    padding: 4px;
+    border-radius: 2px;
+}
+
+.sidebar-additional{
+    display: none;
+}
+
+/* footer */
+
+.footer_wapper{
+    background-color: #93117B;
+    padding: 40px;
+}
+
+.footer_wapper p,
+.footer_wapper li
+{
+    color: white;
+    font-size: 14px;
+}
+
+.footer_wapper li{
+    list-style: none;
+}
+
+.footer_wapper .footer_title{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.footer_wapper .footer-company img{
+    height: 28px;
+    border-radius: 2px;
+}
+
+.footer_wapper .footer_app img{
+    width: 134px;
+    height: 40px;
+    padding: 4px;
+    border-radius: 2px
 }
