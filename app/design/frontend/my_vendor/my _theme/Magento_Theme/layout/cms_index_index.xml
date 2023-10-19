@@ -1,14 +1,718 @@
 <?xml version="1.0"?>
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     
-        <!-- banner -->
         <referenceContainer name="content">
-            <block class="Magento\Framework\View\Element\Template" name="banner" template="Magento_Theme::html/home/banner.phtml" />
+            <container name="main_page" htmlTag="div" htmlClass="container-fluid">
+                <!-- start banner -->
+                <block class="Magento\Framework\View\Element\Template" name="banner" template="Magento_Theme::html/home/banner.phtml">
+                </block>
+                <!-- end banner -->
+                <!-- start top category -->
+                <block class="Magento\Framework\View\Element\Template" name="top_category_block" template="Magento_Theme::html/home/category_list.phtml">
+                    <arguments>
+                        <argument name="main_title" xsi:type="string">Top Categories Of The Month</argument>
+                        <argument name="top_category_array" xsi:type="array">
+                            <item name="top_category_item_1" xsi:type="array">
+                                <item name="top_category_image" xsi:type="string">category_1.jpg</item>
+                                <item name="top_category_title" xsi:type="string">TV Televisions</item>
+                                <item name="top_category_desc" xsi:type="array">
+                                    <item name="top_category_desc_1" xsi:type="string">Smart TV</item>
+                                    <item name="top_category_desc_2" xsi:type="string">4K Ultra HD TVs</item>
+                                    <item name="top_category_desc_3" xsi:type="string">LED TVs</item>
+                                    <item name="top_category_desc_4" xsi:type="string">OLED TVs</item>
+                                    <item name="top_category_desc_5" xsi:type="string">Accessories</item>
+                                </item>
+                            </item>
+                            <item name="top_category_item_2" xsi:type="array">
+                                <item name="top_category_image" xsi:type="string">category_2.jpg</item>
+                                <item name="top_category_title" xsi:type="string">Personal Care</item>
+                                <item name="top_category_desc" xsi:type="array">
+                                    <item name="top_category_desc_1" xsi:type="string">Face mask</item>
+                                    <item name="top_category_desc_2" xsi:type="string"> shield</item>
+                                </item>
+                            </item>
+                            <item name="top_category_item_3" xsi:type="array">
+                                <item name="top_category_image" xsi:type="string">category_3.jpg</item>
+                                <item name="top_category_title" xsi:type="string">Small Appliances</item>
+                                <item name="top_category_desc" xsi:type="array">
+                                    <item name="top_category_desc_1" xsi:type="string">Microwave oven</item>
+                                    <item name="top_category_desc_2" xsi:type="string">Air Fryer</item>
+                                    <item name="top_category_desc_3" xsi:type="string">Rice cooker</item>
+                                    <item name="top_category_desc_4" xsi:type="string">Kettle </item>
+                                    <item name="top_category_desc_5" xsi:type="string">Jar pot</item>
+                                </item>
+                            </item>
+                            <item name="top_category_item_4" xsi:type="array">
+                                <item name="top_category_image" xsi:type="string">category_4.jpg</item>
+                                <item name="top_category_title" xsi:type="string">Consumer Goods</item>
+                                <item name="top_category_desc" xsi:type="array">
+                                    <item name="top_category_desc_1" xsi:type="string">Washing and Cleanser</item>
+                                    <item name="top_category_desc_2" xsi:type="string">Home care</item>
+                                    <item name="top_category_desc_3" xsi:type="string">Hygienic care</item>
+                                    <item name="top_category_desc_4" xsi:type="string">Insect treatment</item>
+                                </item>
+                            </item>
+                            <item name="top_category_item_5" xsi:type="array">
+                                <item name="top_category_image" xsi:type="string">category_5.jpg</item>
+                                <item name="top_category_title" xsi:type="string">Food and Drink</item>
+                                <item name="top_category_desc" xsi:type="array">
+                                    <item name="top_category_desc_1" xsi:type="string">Fruit</item>
+                                    <item name="top_category_desc_2" xsi:type="string">Confectionary</item>
+                                    <item name="top_category_desc_4" xsi:type="string">Beverage</item>
+                                    <item name="top_category_desc_5" xsi:type="string">Seasoning</item>
+                                </item>
+                            </item>
+                            <item name="top_category_item_6" xsi:type="array">
+                                <item name="top_category_image" xsi:type="string">category_6.jpg</item>
+                                <item name="top_category_title" xsi:type="string">Dietary Supplement</item>
+                                <item name="top_category_desc" xsi:type="array">
+                                    <!-- <item name="top_category_desc_1" xsi:type="string">Smart TV</item> -->
+                                    <!-- <item name="top_category_desc_2" xsi:type="string">4K Ultra HD TVs</item> -->
+                                </item>
+                            </item>
+                        </argument>
+                        
+                    </arguments>
+                </block>
+                <!-- end top category -->
+
+                <!-- start Deals Of The Day -->
+                <block class="Magento\Framework\View\Element\Template" name="deals_of_day" template="Magento_Theme::html/home/product_list.phtml">
+                    <arguments>               
+                        <argument name="is_have_tab" xsi:type="boolean">false</argument>
+                        <argument name="is_full_info" xsi:type="boolean">true</argument>
+                        <argument name="is_only_image" xsi:type="boolean">false</argument>
+                        <argument name="main_title" xsi:type="string">Deals Of The Day</argument>
+                        <argument name="products_array" xsi:type="array">
+                            <item name="product_item_1" xsi:type="array">
+                                <item name="product_image" xsi:type="string">product_01.jpg</item>
+                                <item name="product_name" xsi:type="string">Sữa Dưỡng Phục Hồi Tái Tạo Da B5 Neogence 50ml</item>
+                                <item name="total_rate" xsi:type="string">185</item>
+                                <item name="old_price" xsi:type="string">799,000 đ</item>
+                                <item name="new_price" xsi:type="string">399,500 đ</item>
+                                <item name="discount_percent" xsi:type="string">-50%</item>
+                                <item name="name_of_discount_1" xsi:type="string">Member Wednesday</item>
+                                <item name="name_of_discount_2" xsi:type="string">From 00:00 to 15:00</item>
+                            </item>
+                            <item name="product_item_2" xsi:type="array">
+                                <item name="product_image" xsi:type="string">product_01.jpg</item>
+                                <item name="product_name" xsi:type="string">Sữa Dưỡng Phục Hồi Tái Tạo Da B5 Neogence 50ml</item>
+                                <item name="total_rate" xsi:type="string">185</item>
+                                <item name="old_price" xsi:type="string">799,000 đ</item>
+                                <item name="new_price" xsi:type="string">399,500 đ</item>
+                                <item name="discount_percent" xsi:type="string">-50%</item>
+                                <item name="name_of_discount_1" xsi:type="string">Member Wednesday</item>
+                                <item name="name_of_discount_2" xsi:type="string">From 00:00 to 15:00</item>
+                            </item>
+                            <item name="product_item_3" xsi:type="array">
+                                <item name="product_image" xsi:type="string">product_01.jpg</item>
+                                <item name="product_name" xsi:type="string">Sữa Dưỡng Phục Hồi Tái Tạo Da B5 Neogence 50ml</item>
+                                <item name="total_rate" xsi:type="string">185</item>
+                                <item name="old_price" xsi:type="string">799,000 đ</item>
+                                <item name="new_price" xsi:type="string">399,500 đ</item>
+                                <item name="discount_percent" xsi:type="string">-50%</item>
+                                <item name="name_of_discount_1" xsi:type="string">Member Wednesday</item>
+                                <item name="name_of_discount_2" xsi:type="string">From 00:00 to 15:00</item>
+                            </item>
+                            <item name="product_item_4" xsi:type="array">
+                                <item name="product_image" xsi:type="string">product_01.jpg</item>
+                                <item name="product_name" xsi:type="string">Sữa Dưỡng Phục Hồi Tái Tạo Da B5 Neogence 50ml</item>
+                                <item name="total_rate" xsi:type="string">185</item>
+                                <item name="old_price" xsi:type="string">799,000 đ</item>
+                                <item name="new_price" xsi:type="string">399,500 đ</item>
+                                <item name="discount_percent" xsi:type="string">-50%</item>
+                                <item name="name_of_discount_1" xsi:type="string">Member Wednesday</item>
+                                <item name="name_of_discount_2" xsi:type="string">From 00:00 to 15:00</item>
+                            </item>
+                            <item name="product_item_5" xsi:type="array">
+                                <item name="product_image" xsi:type="string">product_01.jpg</item>
+                                <item name="product_name" xsi:type="string">Sữa Dưỡng Phục Hồi Tái Tạo Da B5 Neogence 50ml</item>
+                                <item name="total_rate" xsi:type="string">185</item>
+                                <item name="old_price" xsi:type="string">799,000 đ</item>
+                                <item name="new_price" xsi:type="string">399,500 đ</item>
+                                <item name="discount_percent" xsi:type="string">-50%</item>
+                                <item name="name_of_discount_1" xsi:type="string">Member Wednesday</item>
+                                <item name="name_of_discount_2" xsi:type="string">From 00:00 to 15:00</item>
+                            </item>
+                        </argument>
+                    </arguments>
+                </block>
+                <!-- end Deals Of The Day -->
+                <!-- start Banner -->
+                <block class="Magento\Framework\View\Element\Template" name="banner_2_images" template="Magento_Theme::html/home/banner_2_images.phtml">
+                    <arguments>
+                        <argument name="banner_image_1" xsi:type="string">banner_01.jpg</argument>
+                        <argument name="banner_image_2" xsi:type="string">banner_02.jpg</argument>
+                    </arguments>    
+                </block>
+                <!-- end Banner -->
+                <!-- start Best Seller -->
+                <block class="Magento\Framework\View\Element\Template" name="best_seller" template="Magento_Theme::html/home/product_list.phtml">
+                    <arguments>
+                        <argument name="is_have_tab" xsi:type="boolean">true</argument>
+                        <argument name="is_full_info" xsi:type="boolean">false</argument>
+                        <argument name="is_only_image" xsi:type="boolean">false</argument>
+                        <argument name="main_title" xsi:type="string">Best Seller</argument>
+                        <argument name="list_tab" xsi:type="array">
+                            <item name="tab_item_1" xsi:type="string">Top 20</item>
+                            <item name="tab_item_2" xsi:type="string">Televisions</item>
+                            <item name="tab_item_3" xsi:type="string">Audio</item>
+                            <item name="tab_item_4" xsi:type="string">Kitchen</item>
+                            <item name="tab_item_5" xsi:type="string">Dietary Suplement</item>
+                        </argument>
+
+                        <!-- list products -->
+                        <argument name="products_array" xsi:type="array">
+                            <item name="product_item_1" xsi:type="array">
+                                <item name="product_image" xsi:type="string">best_seller_01.jpg</item>
+                                <item name="product_name" xsi:type="string">Multi cooker 9 Liters</item>
+                                <item name="total_rate" xsi:type="string">185</item>
+                                <item name="old_price" xsi:type="string">$1000</item>
+                                <item name="new_price" xsi:type="string">$800</item>
+                                <item name="discount_percent" xsi:type="string"></item>
+                                <item name="name_of_discount_1" xsi:type="string"></item>
+                                <item name="name_of_discount_2" xsi:type="string"></item>
+                            </item>
+                            <item name="product_item_2" xsi:type="array">
+                                <item name="product_image" xsi:type="string">best_seller_02.jpg</item>
+                                <item name="product_name" xsi:type="string">Sharp Dynabook VE1.5</item>
+                                <item name="total_rate" xsi:type="string">18</item>
+                                <item name="old_price" xsi:type="string">$1000</item>
+                                <item name="new_price" xsi:type="string">$800</item>
+                                <item name="discount_percent" xsi:type="string"></item>
+                                <item name="name_of_discount_1" xsi:type="string"></item>
+                                <item name="name_of_discount_2" xsi:type="string"></item>
+                            </item>
+                            <item name="product_item_3" xsi:type="array">
+                                <item name="product_image" xsi:type="string">best_seller_03.jpg</item>
+                                <item name="product_name" xsi:type="string">New Zealand Cherry</item>
+                                <item name="total_rate" xsi:type="string">18</item>
+                                <item name="old_price" xsi:type="string">$40</item>
+                                <item name="new_price" xsi:type="string">$25</item>
+                                <item name="discount_percent" xsi:type="string"></item>
+                                <item name="name_of_discount_1" xsi:type="string"></item>
+                                <item name="name_of_discount_2" xsi:type="string"></item>
+                            </item>
+                            <item name="product_item_4" xsi:type="array">
+                                <item name="product_image" xsi:type="string">best_seller_04.jpg</item>
+                                <item name="product_name" xsi:type="string">Sharp Face mask FDA certified</item>
+                                <item name="total_rate" xsi:type="string">18</item>
+                                <item name="old_price" xsi:type="string">$10</item>
+                                <item name="new_price" xsi:type="string">$7</item>
+                                <item name="discount_percent" xsi:type="string"></item>
+                                <item name="name_of_discount_1" xsi:type="string"></item>
+                                <item name="name_of_discount_2" xsi:type="string"></item>
+                            </item>
+                            <item name="product_item_5" xsi:type="array">
+                                <item name="product_image" xsi:type="string">best_seller_05.jpg</item>
+                                <item name="product_name" xsi:type="string">Sharp Healsio AX-1700</item>
+                                <item name="total_rate" xsi:type="string">18</item>
+                                <item name="old_price" xsi:type="string">$1.000.000đ</item>
+                                <item name="new_price" xsi:type="string">$999.000</item>
+                                <item name="discount_percent" xsi:type="string"></item>
+                                <item name="name_of_discount_1" xsi:type="string"></item>
+                                <item name="name_of_discount_2" xsi:type="string"></item>
+                            </item>
+
+                        </argument>
+                    </arguments>
+                </block>
+                <!-- end Best Seller -->
+                <!-- start banner 1 image -->
+                <block class="Magento\Framework\View\Element\Template" name="banner_1_image" template="Magento_Theme::html/home/banner_1_image.phtml">
+                    <arguments>
+                        <argument name="banner_image" xsi:type="string">sub_banner_01.jpg</argument>
+                    </arguments>
+                </block>
+                <!-- end banner 1 image -->
+                <!-- start Cirtus Juicer -->
+                <block class="Magento\Framework\View\Element\Template" name="cirtus_juicer" template="Magento_Theme::html/home/product_list.phtml">
+                    <arguments>
+                        <argument name="main_title" xsi:type="string">Cirtus Juicer</argument>
+                        <argument name="is_have_tab" xsi:type="boolean">true</argument>
+                        <argument name="list_tab" xsi:type="array">
+                            <item name="tab_item_1" xsi:type="string">8K TV</item>
+                            <item name="tab_item_2" xsi:type="string">4K TV</item>
+                            <item name="tab_item_3" xsi:type="string">Full HD TV</item>
+                            <item name="tab_item_4" xsi:type="string">Audio</item>
+                            <item name="tab_item_5" xsi:type="string">View All</item>
+                        </argument>
+                        <argument name="is_full_info" xsi:type="boolean">false</argument>
+
+                        <!-- list products -->
+                        <argument name="products_array" xsi:type="array">
+                            <item name="product_item_1" xsi:type="array">
+                                <item name="product_image" xsi:type="string">best_seller_01.jpg</item>
+                                <item name="product_name" xsi:type="string">Multi cooker 9 Liters</item>
+                                <item name="total_rate" xsi:type="string">185</item>
+                                <item name="old_price" xsi:type="string">$1000</item>
+                                <item name="new_price" xsi:type="string">$800</item>
+                                <item name="discount_percent" xsi:type="string"></item>
+                                <item name="name_of_discount_1" xsi:type="string"></item>
+                                <item name="name_of_discount_2" xsi:type="string"></item>
+                            </item>
+                            <item name="product_item_2" xsi:type="array">
+                                <item name="product_image" xsi:type="string">best_seller_02.jpg</item>
+                                <item name="product_name" xsi:type="string">Sharp Dynabook VE1.5</item>
+                                <item name="total_rate" xsi:type="string">18</item>
+                                <item name="old_price" xsi:type="string">$1000</item>
+                                <item name="new_price" xsi:type="string">$800</item>
+                                <item name="discount_percent" xsi:type="string"></item>
+                                <item name="name_of_discount_1" xsi:type="string"></item>
+                                <item name="name_of_discount_2" xsi:type="string"></item>
+                            </item>
+                            <item name="product_item_3" xsi:type="array">
+                                <item name="product_image" xsi:type="string">best_seller_03.jpg</item>
+                                <item name="product_name" xsi:type="string">New Zealand Cherry</item>
+                                <item name="total_rate" xsi:type="string">18</item>
+                                <item name="old_price" xsi:type="string">$40</item>
+                                <item name="new_price" xsi:type="string">$25</item>
+                                <item name="discount_percent" xsi:type="string"></item>
+                                <item name="name_of_discount_1" xsi:type="string"></item>
+                                <item name="name_of_discount_2" xsi:type="string"></item>
+                            </item>
+                            <item name="product_item_4" xsi:type="array">
+                                <item name="product_image" xsi:type="string">best_seller_04.jpg</item>
+                                <item name="product_name" xsi:type="string">Sharp Face mask FDA certified</item>
+                                <item name="total_rate" xsi:type="string">18</item>
+                                <item name="old_price" xsi:type="string">$10</item>
+                                <item name="new_price" xsi:type="string">$7</item>
+                                <item name="discount_percent" xsi:type="string"></item>
+                                <item name="name_of_discount_1" xsi:type="string"></item>
+                                <item name="name_of_discount_2" xsi:type="string"></item>
+                            </item>
+                            <item name="product_item_5" xsi:type="array">
+                                <item name="product_image" xsi:type="string">best_seller_05.jpg</item>
+                                <item name="product_name" xsi:type="string">Sharp Healsio AX-1700</item>
+                                <item name="total_rate" xsi:type="string">18</item>
+                                <item name="old_price" xsi:type="string">$1.000.000đ</item>
+                                <item name="new_price" xsi:type="string">$999.000</item>
+                                <item name="discount_percent" xsi:type="string"></item>
+                                <item name="name_of_discount_1" xsi:type="string"></item>
+                                <item name="name_of_discount_2" xsi:type="string"></item>
+                            </item>
+                        </argument>
+                    </arguments>
+                </block>
+                <!-- end Cirtus Juicer -->
+                <!-- start Blender -->
+                <block class="Magento\Framework\View\Element\Template" name="blender" template="Magento_Theme::html/home/product_list.phtml">
+                    <arguments>
+                        <argument name="main_title" xsi:type="string">Blender</argument>
+                        <argument name="is_have_tab" xsi:type="boolean">true</argument>
+                        <argument name="list_tab" xsi:type="array">
+                            <item name="tab_item_1" xsi:type="string">Face shield</item>
+                            <item name="tab_item_2" xsi:type="string">Face mask</item>
+                            <item name="tab_item_3" xsi:type="string">View All</item>
+                        </argument>
+                        <argument name="is_full_info" xsi:type="boolean">false</argument>
+
+                        <!-- list products -->
+                        <argument name="products_array" xsi:type="array">
+                            <item name="product_item_1" xsi:type="array">
+                                <item name="product_image" xsi:type="string">best_seller_01.jpg</item>
+                                <item name="product_name" xsi:type="string">Multi cooker 9 Liters</item>
+                                <item name="total_rate" xsi:type="string">185</item>
+                                <item name="old_price" xsi:type="string">$1000</item>
+                                <item name="new_price" xsi:type="string">$800</item>
+                                <item name="discount_percent" xsi:type="string"></item>
+                                <item name="name_of_discount_1" xsi:type="string"></item>
+                                <item name="name_of_discount_2" xsi:type="string"></item>
+                            </item>
+                            <item name="product_item_2" xsi:type="array">
+                                <item name="product_image" xsi:type="string">best_seller_02.jpg</item>
+                                <item name="product_name" xsi:type="string">Sharp Dynabook VE1.5</item>
+                                <item name="total_rate" xsi:type="string">18</item>
+                                <item name="old_price" xsi:type="string">$1000</item>
+                                <item name="new_price" xsi:type="string">$800</item>
+                                <item name="discount_percent" xsi:type="string"></item>
+                                <item name="name_of_discount_1" xsi:type="string"></item>
+                                <item name="name_of_discount_2" xsi:type="string"></item>
+                            </item>
+                            <item name="product_item_3" xsi:type="array">
+                                <item name="product_image" xsi:type="string">best_seller_03.jpg</item>
+                                <item name="product_name" xsi:type="string">New Zealand Cherry</item>
+                                <item name="total_rate" xsi:type="string">18</item>
+                                <item name="old_price" xsi:type="string">$40</item>
+                                <item name="new_price" xsi:type="string">$25</item>
+                                <item name="discount_percent" xsi:type="string"></item>
+                                <item name="name_of_discount_1" xsi:type="string"></item>
+                                <item name="name_of_discount_2" xsi:type="string"></item>
+                            </item>
+                            <item name="product_item_4" xsi:type="array">
+                                <item name="product_image" xsi:type="string">best_seller_04.jpg</item>
+                                <item name="product_name" xsi:type="string">Sharp Face mask FDA certified</item>
+                                <item name="total_rate" xsi:type="string">18</item>
+                                <item name="old_price" xsi:type="string">$10</item>
+                                <item name="new_price" xsi:type="string">$7</item>
+                                <item name="discount_percent" xsi:type="string"></item>
+                                <item name="name_of_discount_1" xsi:type="string"></item>
+                                <item name="name_of_discount_2" xsi:type="string"></item>
+                            </item>
+                            <item name="product_item_5" xsi:type="array">
+                                <item name="product_image" xsi:type="string">best_seller_05.jpg</item>
+                                <item name="product_name" xsi:type="string">Sharp Healsio AX-1700</item>
+                                <item name="total_rate" xsi:type="string">18</item>
+                                <item name="old_price" xsi:type="string">$1.000.000đ</item>
+                                <item name="new_price" xsi:type="string">$999.000</item>
+                                <item name="discount_percent" xsi:type="string"></item>
+                                <item name="name_of_discount_1" xsi:type="string"></item>
+                                <item name="name_of_discount_2" xsi:type="string"></item>
+                            </item>
+                        </argument>
+                    </arguments>
+                </block>
+                <!-- end Blender -->
+                <!-- start Electric Oven -->
+                <block class="Magento\Framework\View\Element\Template" name="electric_oven" template="Magento_Theme::html/home/product_list.phtml">
+                    <arguments>
+                        <argument name="main_title" xsi:type="string">Electric Oven</argument>
+                        <argument name="is_have_tab" xsi:type="boolean">true</argument>
+                        <argument name="list_tab" xsi:type="array">
+                            <item name="tab_item_1" xsi:type="string">Microwave</item>
+                            <item name="tab_item_2" xsi:type="string">Air fryer</item>
+                            <item name="tab_item_3" xsi:type="string">Rice cooker</item>
+                            <item name="tab_item_4" xsi:type="string">View All</item>
+                        </argument>
+                        <argument name="is_full_info" xsi:type="boolean">false</argument>
+
+                        <!-- list products -->
+                        <argument name="products_array" xsi:type="array">
+                            <item name="product_item_1" xsi:type="array">
+                                <item name="product_image" xsi:type="string">best_seller_01.jpg</item>
+                                <item name="product_name" xsi:type="string">Multi cooker 9 Liters</item>
+                                <item name="total_rate" xsi:type="string">185</item>
+                                <item name="old_price" xsi:type="string">$1000</item>
+                                <item name="new_price" xsi:type="string">$800</item>
+                                <item name="discount_percent" xsi:type="string"></item>
+                                <item name="name_of_discount_1" xsi:type="string"></item>
+                                <item name="name_of_discount_2" xsi:type="string"></item>
+                            </item>
+                            <item name="product_item_2" xsi:type="array">
+                                <item name="product_image" xsi:type="string">best_seller_02.jpg</item>
+                                <item name="product_name" xsi:type="string">Sharp Dynabook VE1.5</item>
+                                <item name="total_rate" xsi:type="string">18</item>
+                                <item name="old_price" xsi:type="string">$1000</item>
+                                <item name="new_price" xsi:type="string">$800</item>
+                                <item name="discount_percent" xsi:type="string"></item>
+                                <item name="name_of_discount_1" xsi:type="string"></item>
+                                <item name="name_of_discount_2" xsi:type="string"></item>
+                            </item>
+                            <item name="product_item_3" xsi:type="array">
+                                <item name="product_image" xsi:type="string">best_seller_03.jpg</item>
+                                <item name="product_name" xsi:type="string">New Zealand Cherry</item>
+                                <item name="total_rate" xsi:type="string">18</item>
+                                <item name="old_price" xsi:type="string">$40</item>
+                                <item name="new_price" xsi:type="string">$25</item>
+                                <item name="discount_percent" xsi:type="string"></item>
+                                <item name="name_of_discount_1" xsi:type="string"></item>
+                                <item name="name_of_discount_2" xsi:type="string"></item>
+                            </item>
+                            <item name="product_item_4" xsi:type="array">
+                                <item name="product_image" xsi:type="string">best_seller_04.jpg</item>
+                                <item name="product_name" xsi:type="string">Sharp Face mask FDA certified</item>
+                                <item name="total_rate" xsi:type="string">18</item>
+                                <item name="old_price" xsi:type="string">$10</item>
+                                <item name="new_price" xsi:type="string">$7</item>
+                                <item name="discount_percent" xsi:type="string"></item>
+                                <item name="name_of_discount_1" xsi:type="string"></item>
+                                <item name="name_of_discount_2" xsi:type="string"></item>
+                            </item>
+                            <item name="product_item_5" xsi:type="array">
+                                <item name="product_image" xsi:type="string">best_seller_05.jpg</item>
+                                <item name="product_name" xsi:type="string">Sharp Healsio AX-1700</item>
+                                <item name="total_rate" xsi:type="string">18</item>
+                                <item name="old_price" xsi:type="string">$1.000.000đ</item>
+                                <item name="new_price" xsi:type="string">$999.000</item>
+                                <item name="discount_percent" xsi:type="string"></item>
+                                <item name="name_of_discount_1" xsi:type="string"></item>
+                                <item name="name_of_discount_2" xsi:type="string"></item>
+                            </item>
+                        </argument>
+                    </arguments>
+                </block>
+                <!-- end Electric Oven -->
+                <!-- start Air Purifier -->
+                <block class="Magento\Framework\View\Element\Template" name="air_purifier" template="Magento_Theme::html/home/product_list.phtml">
+                    <arguments>
+                        <argument name="main_title" xsi:type="string">Air Purifier</argument>
+                        <argument name="is_have_tab" xsi:type="boolean">true</argument>
+                        <argument name="list_tab" xsi:type="array">
+                            <item name="tab_item_1" xsi:type="string">Microwave</item>
+                            <item name="tab_item_2" xsi:type="string">Air fryer</item>
+                            <item name="tab_item_3" xsi:type="string">Rice cooker</item>
+                            <item name="tab_item_4" xsi:type="string">View All</item>
+                        </argument>
+                        <argument name="is_full_info" xsi:type="boolean">false</argument>
+
+                        <!-- list products -->
+                        <argument name="products_array" xsi:type="array">
+                            <item name="product_item_1" xsi:type="array">
+                                <item name="product_image" xsi:type="string">best_seller_01.jpg</item>
+                                <item name="product_name" xsi:type="string">Multi cooker 9 Liters</item>
+                                <item name="total_rate" xsi:type="string">185</item>
+                                <item name="old_price" xsi:type="string">$1000</item>
+                                <item name="new_price" xsi:type="string">$800</item>
+                                <item name="discount_percent" xsi:type="string"></item>
+                                <item name="name_of_discount_1" xsi:type="string"></item>
+                                <item name="name_of_discount_2" xsi:type="string"></item>
+                            </item>
+                            <item name="product_item_2" xsi:type="array">
+                                <item name="product_image" xsi:type="string">best_seller_02.jpg</item>
+                                <item name="product_name" xsi:type="string">Sharp Dynabook VE1.5</item>
+                                <item name="total_rate" xsi:type="string">18</item>
+                                <item name="old_price" xsi:type="string">$1000</item>
+                                <item name="new_price" xsi:type="string">$800</item>
+                                <item name="discount_percent" xsi:type="string"></item>
+                                <item name="name_of_discount_1" xsi:type="string"></item>
+                                <item name="name_of_discount_2" xsi:type="string"></item>
+                            </item>
+                            <item name="product_item_3" xsi:type="array">
+                                <item name="product_image" xsi:type="string">best_seller_03.jpg</item>
+                                <item name="product_name" xsi:type="string">New Zealand Cherry</item>
+                                <item name="total_rate" xsi:type="string">18</item>
+                                <item name="old_price" xsi:type="string">$40</item>
+                                <item name="new_price" xsi:type="string">$25</item>
+                                <item name="discount_percent" xsi:type="string"></item>
+                                <item name="name_of_discount_1" xsi:type="string"></item>
+                                <item name="name_of_discount_2" xsi:type="string"></item>
+                            </item>
+                            <item name="product_item_4" xsi:type="array">
+                                <item name="product_image" xsi:type="string">best_seller_04.jpg</item>
+                                <item name="product_name" xsi:type="string">Sharp Face mask FDA certified</item>
+                                <item name="total_rate" xsi:type="string">18</item>
+                                <item name="old_price" xsi:type="string">$10</item>
+                                <item name="new_price" xsi:type="string">$7</item>
+                                <item name="discount_percent" xsi:type="string"></item>
+                                <item name="name_of_discount_1" xsi:type="string"></item>
+                                <item name="name_of_discount_2" xsi:type="string"></item>
+                            </item>
+                            <item name="product_item_5" xsi:type="array">
+                                <item name="product_image" xsi:type="string">best_seller_05.jpg</item>
+                                <item name="product_name" xsi:type="string">Sharp Healsio AX-1700</item>
+                                <item name="total_rate" xsi:type="string">18</item>
+                                <item name="old_price" xsi:type="string">$1.000.000đ</item>
+                                <item name="new_price" xsi:type="string">$999.000</item>
+                                <item name="discount_percent" xsi:type="string"></item>
+                                <item name="name_of_discount_1" xsi:type="string"></item>
+                                <item name="name_of_discount_2" xsi:type="string"></item>
+                            </item>
+                        </argument>
+                    </arguments>
+                </block>
+                <!-- end Air Purifier -->
+                <!-- start Air-Conditioner -->
+                <block class="Magento\Framework\View\Element\Template" name="air_conditioner" template="Magento_Theme::html/home/product_list.phtml">
+                    <arguments>
+                        <argument name="main_title" xsi:type="string">Air-Conditioner</argument>
+                        <argument name="is_have_tab" xsi:type="boolean">true</argument>
+                        <argument name="list_tab" xsi:type="array">
+                            <item name="tab_item_1" xsi:type="string">Microwave</item>
+                            <item name="tab_item_2" xsi:type="string">Air fryer</item>
+                            <item name="tab_item_3" xsi:type="string">Rice cooker</item>
+                            <item name="tab_item_4" xsi:type="string">View All</item>
+                        </argument>
+                        <argument name="is_full_info" xsi:type="boolean">false</argument>
+
+                        <!-- list products -->
+                        <argument name="products_array" xsi:type="array">
+                            <item name="product_item_1" xsi:type="array">
+                                <item name="product_image" xsi:type="string">best_seller_01.jpg</item>
+                                <item name="product_name" xsi:type="string">Multi cooker 9 Liters</item>
+                                <item name="total_rate" xsi:type="string">185</item>
+                                <item name="old_price" xsi:type="string">$1000</item>
+                                <item name="new_price" xsi:type="string">$800</item>
+                                <item name="discount_percent" xsi:type="string"></item>
+                                <item name="name_of_discount_1" xsi:type="string"></item>
+                                <item name="name_of_discount_2" xsi:type="string"></item>
+                            </item>
+                            <item name="product_item_2" xsi:type="array">
+                                <item name="product_image" xsi:type="string">best_seller_02.jpg</item>
+                                <item name="product_name" xsi:type="string">Sharp Dynabook VE1.5</item>
+                                <item name="total_rate" xsi:type="string">18</item>
+                                <item name="old_price" xsi:type="string">$1000</item>
+                                <item name="new_price" xsi:type="string">$800</item>
+                                <item name="discount_percent" xsi:type="string"></item>
+                                <item name="name_of_discount_1" xsi:type="string"></item>
+                                <item name="name_of_discount_2" xsi:type="string"></item>
+                            </item>
+                            <item name="product_item_3" xsi:type="array">
+                                <item name="product_image" xsi:type="string">best_seller_03.jpg</item>
+                                <item name="product_name" xsi:type="string">New Zealand Cherry</item>
+                                <item name="total_rate" xsi:type="string">18</item>
+                                <item name="old_price" xsi:type="string">$40</item>
+                                <item name="new_price" xsi:type="string">$25</item>
+                                <item name="discount_percent" xsi:type="string"></item>
+                                <item name="name_of_discount_1" xsi:type="string"></item>
+                                <item name="name_of_discount_2" xsi:type="string"></item>
+                            </item>
+                            <item name="product_item_4" xsi:type="array">
+                                <item name="product_image" xsi:type="string">best_seller_04.jpg</item>
+                                <item name="product_name" xsi:type="string">Sharp Face mask FDA certified</item>
+                                <item name="total_rate" xsi:type="string">18</item>
+                                <item name="old_price" xsi:type="string">$10</item>
+                                <item name="new_price" xsi:type="string">$7</item>
+                                <item name="discount_percent" xsi:type="string"></item>
+                                <item name="name_of_discount_1" xsi:type="string"></item>
+                                <item name="name_of_discount_2" xsi:type="string"></item>
+                            </item>
+                            <item name="product_item_5" xsi:type="array">
+                                <item name="product_image" xsi:type="string">best_seller_05.jpg</item>
+                                <item name="product_name" xsi:type="string">Sharp Healsio AX-1700</item>
+                                <item name="total_rate" xsi:type="string">18</item>
+                                <item name="old_price" xsi:type="string">$1.000.000đ</item>
+                                <item name="new_price" xsi:type="string">$999.000</item>
+                                <item name="discount_percent" xsi:type="string"></item>
+                                <item name="name_of_discount_1" xsi:type="string"></item>
+                                <item name="name_of_discount_2" xsi:type="string"></item>
+                            </item>
+                        </argument>
+                    </arguments>
+                </block>
+                <!-- end Air-Conditioner -->
+                <!-- start Refrigerator -->
+                <block class="Magento\Framework\View\Element\Template" name="refrigerator" template="Magento_Theme::html/home/product_list.phtml">
+                    <arguments>
+                        <argument name="main_title" xsi:type="string">Refrigerator</argument>
+                        <argument name="is_have_tab" xsi:type="boolean">true</argument>
+                        <argument name="list_tab" xsi:type="array">
+                            <item name="tab_item_1" xsi:type="string">Microwave</item>
+                            <item name="tab_item_2" xsi:type="string">Air fryer</item>
+                            <item name="tab_item_3" xsi:type="string">Rice cooker</item>
+                            <item name="tab_item_4" xsi:type="string">View All</item>
+                        </argument>
+                        <argument name="is_full_info" xsi:type="boolean">false</argument>
+
+                        <!-- list products -->
+                        <argument name="products_array" xsi:type="array">
+                            <item name="product_item_1" xsi:type="array">
+                                <item name="product_image" xsi:type="string">best_seller_01.jpg</item>
+                                <item name="product_name" xsi:type="string">Multi cooker 9 Liters</item>
+                                <item name="total_rate" xsi:type="string">185</item>
+                                <item name="old_price" xsi:type="string">$1000</item>
+                                <item name="new_price" xsi:type="string">$800</item>
+                                <item name="discount_percent" xsi:type="string"></item>
+                                <item name="name_of_discount_1" xsi:type="string"></item>
+                                <item name="name_of_discount_2" xsi:type="string"></item>
+                            </item>
+                            <item name="product_item_2" xsi:type="array">
+                                <item name="product_image" xsi:type="string">best_seller_02.jpg</item>
+                                <item name="product_name" xsi:type="string">Sharp Dynabook VE1.5</item>
+                                <item name="total_rate" xsi:type="string">18</item>
+                                <item name="old_price" xsi:type="string">$1000</item>
+                                <item name="new_price" xsi:type="string">$800</item>
+                                <item name="discount_percent" xsi:type="string"></item>
+                                <item name="name_of_discount_1" xsi:type="string"></item>
+                                <item name="name_of_discount_2" xsi:type="string"></item>
+                            </item>
+                            <item name="product_item_3" xsi:type="array">
+                                <item name="product_image" xsi:type="string">best_seller_03.jpg</item>
+                                <item name="product_name" xsi:type="string">New Zealand Cherry</item>
+                                <item name="total_rate" xsi:type="string">18</item>
+                                <item name="old_price" xsi:type="string">$40</item>
+                                <item name="new_price" xsi:type="string">$25</item>
+                                <item name="discount_percent" xsi:type="string"></item>
+                                <item name="name_of_discount_1" xsi:type="string"></item>
+                                <item name="name_of_discount_2" xsi:type="string"></item>
+                            </item>
+                            <item name="product_item_4" xsi:type="array">
+                                <item name="product_image" xsi:type="string">best_seller_04.jpg</item>
+                                <item name="product_name" xsi:type="string">Sharp Face mask FDA certified</item>
+                                <item name="total_rate" xsi:type="string">18</item>
+                                <item name="old_price" xsi:type="string">$10</item>
+                                <item name="new_price" xsi:type="string">$7</item>
+                                <item name="discount_percent" xsi:type="string"></item>
+                                <item name="name_of_discount_1" xsi:type="string"></item>
+                                <item name="name_of_discount_2" xsi:type="string"></item>
+                            </item>
+                            <item name="product_item_5" xsi:type="array">
+                                <item name="product_image" xsi:type="string">best_seller_05.jpg</item>
+                                <item name="product_name" xsi:type="string">Sharp Healsio AX-1700</item>
+                                <item name="total_rate" xsi:type="string">18</item>
+                                <item name="old_price" xsi:type="string">$1.000.000đ</item>
+                                <item name="new_price" xsi:type="string">$999.000</item>
+                                <item name="discount_percent" xsi:type="string"></item>
+                                <item name="name_of_discount_1" xsi:type="string"></item>
+                                <item name="name_of_discount_2" xsi:type="string"></item>
+                            </item>
+                        </argument>
+                    </arguments>
+                </block>
+                <!-- end Refrigerator -->
+                <!-- start News -->
+                <block class="Magento\Framework\View\Element\Template" name="news" template="Magento_Theme::html/home/news_list.phtml">
+                </block>
+                <!-- end News -->
+                <!-- start Recently Viewed Products -->
+                <block class="Magento\Framework\View\Element\Template" name="view_recent" template="Magento_Theme::html/home/product_list.phtml">
+                    <arguments>
+                        <argument name="main_title" xsi:type="string">Your Recently Viewed Products</argument>
+                        <argument name="is_have_tab" xsi:type="boolean">true</argument>
+                        <argument name="is_full_info" xsi:type="boolean">false</argument>
+                        <argument name="is_only_image" xsi:type="boolean">true</argument>
+                        <argument name="list_tab" xsi:type="array">
+                            <item name="tab_item_1" xsi:type="string">Review Product</item>
+                            <item name="tab_item_2" xsi:type="string">Tips and Tricks</item>
+                            <item name="tab_item_3" xsi:type="string">Promotions</item>
+                            <item name="tab_item_4" xsi:type="string">View All</item>
+                        </argument>
+                        <!-- list products -->
+                        <argument name="products_array" xsi:type="array">
+                            <item name="product_item_1" xsi:type="array">
+                                <item name="product_image" xsi:type="string">product_recently_viewed_01.jpg</item>
+                                <item name="product_name" xsi:type="string"></item>
+                                <item name="total_rate" xsi:type="string"></item>
+                                <item name="old_price" xsi:type="string"></item>
+                                <item name="new_price" xsi:type="string"></item>
+                                <item name="discount_percent" xsi:type="string"></item>
+                                <item name="name_of_discount_1" xsi:type="string"></item>
+                                <item name="name_of_discount_2" xsi:type="string"></item>
+                            </item>
+                             <item name="product_item_2" xsi:type="array">
+                                <item name="product_image" xsi:type="string">product_recently_viewed_02.jpg</item>
+                                <item name="product_name" xsi:type="string"></item>
+                                <item name="total_rate" xsi:type="string"></item>
+                                <item name="old_price" xsi:type="string"></item>
+                                <item name="new_price" xsi:type="string"></item>
+                                <item name="discount_percent" xsi:type="string"></item>
+                                <item name="name_of_discount_1" xsi:type="string"></item>
+                                <item name="name_of_discount_2" xsi:type="string"></item>
+                            </item>
+                             <item name="product_item_3" xsi:type="array">
+                                <item name="product_image" xsi:type="string">product_recently_viewed_03.jpg</item>
+                                <item name="product_name" xsi:type="string"></item>
+                                <item name="total_rate" xsi:type="string"></item>
+                                <item name="old_price" xsi:type="string"></item>
+                                <item name="new_price" xsi:type="string"></item>
+                                <item name="discount_percent" xsi:type="string"></item>
+                                <item name="name_of_discount_1" xsi:type="string"></item>
+                                <item name="name_of_discount_2" xsi:type="string"></item>
+                            </item>
+                             <item name="product_item_4" xsi:type="array">
+                                <item name="product_image" xsi:type="string">product_recently_viewed_04.jpg</item>
+                                <item name="product_name" xsi:type="string"></item>
+                                <item name="total_rate" xsi:type="string"></item>
+                                <item name="old_price" xsi:type="string"></item>
+                                <item name="new_price" xsi:type="string"></item>
+                                <item name="discount_percent" xsi:type="string"></item>
+                                <item name="name_of_discount_1" xsi:type="string"></item>
+                                <item name="name_of_discount_2" xsi:type="string"></item>
+                            </item>
+                             <item name="product_item_5" xsi:type="array">
+                                <item name="product_image" xsi:type="string">product_recently_viewed_05.jpg</item>
+                                <item name="product_name" xsi:type="string"></item>
+                                <item name="total_rate" xsi:type="string"></item>
+                                <item name="old_price" xsi:type="string"></item>
+                                <item name="new_price" xsi:type="string"></item>
+                                <item name="discount_percent" xsi:type="string"></item>
+                                <item name="name_of_discount_1" xsi:type="string"></item>
+                                <item name="name_of_discount_2" xsi:type="string"></item>
+                            </item>
+                            
+                        </argument>
+                    </arguments>
+                </block>
+                <!-- end Recently Viewed Products -->
+            </container>
         </referenceContainer>
-
-        <!-- banner -->
-        
-   
-
-
 </page>

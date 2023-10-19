@@ -13,6 +13,7 @@
 .header.content{
     display: flex;
     justify-content: space-between;
+    background-image: linear-gradient(to right, white, --main-color);
 }
 .userlink{
     list-style: none;
@@ -22,10 +23,22 @@
     display: flex;
 }
 
-.panel.header{
-    padding: 0px;
+.page-header .header.panel{
+    padding: 0px !important;
+    background-color: #93117B;
 }
 
+nav.navigation{
+    background: #93117B;
+}
+
+.main_title, .wrap_item{
+    margin: 20px 0;
+}
+
+.item{
+    padding: 0 10px;
+}
 /* ---------------------------- banner ---------------------------- */
 
 .wrap-itemhot{
@@ -74,107 +87,141 @@
     font-weight: 600;
 }
 
-/* Deals Of The Day */
-.deals_of_day_wrapper .product_title{
+/* Product_list */
+.product_list_wrapper .product_title{
     color: var(--main-color);
     font-size: 14px;
     font-weight: 500;
+    height: 36px;
 }
 
-.deals_of_day_wrapper .product_rate {
+.product_list_wrapper .product_info .product_rate {
     display: flex;
     align-items: center;
 }
 
-.deals_of_day_wrapper .product_rate svg{
+.product_list_wrapper .product_info .product_rate svg{
     color: #EAB223;
     margin-right: 4px;
     font-size: 16px;
 }
 
-.deals_of_day_wrapper .product_rate span{
+.product_list_wrapper .product_info .product_rate span{
     color: #636363;
 }
 
-.deals_of_day_wrapper .product_old_price {
+.product_list_wrapper .product_info .product_old_price {
     text-decoration: line-through;
 }
 
-.deals_of_day_wrapper .product_discount_name svg{
+.product_list_wrapper .product_info .product_discount_name svg{
     color: var(--main-color);
 }
 
-.deals_of_day_wrapper .product_discount_name span{
+.product_list_wrapper .product_info .product_discount_name span{
     font-weight: 500;
 }
 
-.deals_of_day_wrapper .product_price{
+.product_list_wrapper .product_info .product_price{
     color: #F2351B;
     font-size: 18px;
     font-weight: 500;
     margin-right: 8px;
 }
 
-.deals_of_day_wrapper .product_discount_percent{
+.product_list_wrapper .product_info .product_discount_percent{
     background: #F2351B;
     color: white;
     padding: 4px;
     border-radius: 2px
 }
+
+.product_list_wrapper .product_info.not_full_info{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.product_list_wrapper .product_info.not_full_info .product_discount_name {
+    display: none;
+}
+
+.product_list_wrapper .product_info.not_full_info .product_price{
+    color: #000;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.product_list_wrapper .product_info.not_full_info .product_discount_percent{
+    display: none;
+}
+
+.product_list_wrapper.only_image .item .product_title,
+.product_list_wrapper.only_image .item .product_info{
+    display: none;
+}
+
+
 /*--------------------- Best Sellelr */
-.best_seller_header{
+.list_product_header{
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #EDEDED;
 }
 
-.best_seller_header .best_seller_title{
+
+
+.list_product_header .list_product_title{
     font-size: 24px;
     font-weight: 600;
 }
 
-.best_seller_header .best_seller_category{
+.list_product_header.have_tab .list_product_tab{
     display: flex;
     align-items: center;
     list-style: none;
 }
 
-.best_seller_header .best_seller_category li{
+.list_product_header.not_tab .list_product_tab{
+    display: none;
+    size: 16px;
+}
+
+.list_product_header .list_product_tab li{
     margin-right: 8px;
-    size: 14px;
+    margin-bottom: 0px;
     font-weight: 500;
 }
 
-.best_seller_header .best_seller_category li:first-child{
+.list_product_header .list_product_tab li:first-child{
     color: var(--main-color);
 }
 
-.best_seller_wrapper_item .product_title{
+.list_product_wrapper_item .product_title{
     color: var(--main-color);
     font-size: 14px;
     font-weight: 500;
 }
 
-.best_seller_wrapper_item .product_rate {
+.list_product_wrapper_item .product_rate {
     display: flex;
     align-items: center;
 }
 
-.best_seller_wrapper_item .product_rate svg{
+.list_product_wrapper_item .product_rate svg{
     color: #EAB223;
     margin-right: 4px;
     font-size: 16px;
 }
 
-.best_seller_wrapper_item .product_rate span{
+.list_product_wrapper_item .product_rate span{
     color: #636363;
 }
 
-.best_seller_wrapper_item .product_old_price {
+.list_product_wrapper_item .product_old_price {
     text-decoration: line-through;
 }
 
-.best_seller_wrapper_item .product_price{
+.list_product_wrapper_item .product_price{
     color: black;
     font-size: 18px;
     font-weight: 500;
@@ -237,3 +284,5 @@
     padding: 4px;
     border-radius: 2px
 }
+
+/* product detailed */

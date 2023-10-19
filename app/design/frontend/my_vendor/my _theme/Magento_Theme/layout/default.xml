@@ -79,14 +79,6 @@
         </container>
         <!--end container action -->
     </referenceContainer>
-
-
-    <!-- banner -->
-    <referenceContainer name="page.wrapper">
-         <block class="Magento\Framework\View\Element\Template" name="banner" template="Magento_Theme::html/home/banner.phtml" />
-
-    </referenceContainer>
-
     <move element="register-link" destination="userlink"  />
     <move element="authorization-link" destination="userlink" />
 

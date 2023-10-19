@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+        <move element="product.info.sku" destination="info_bottom_title_container" />
+        <move element="product.price.final" destination="product.info.main" after="type_discount" />
+        <move element="product.info.stock.sku" destination="product.info.main" after="price_with_multiple_products" />
+        <move element="product.info.addtocart.additional" destination="product.info.main" after="price_with_multiple_products"/>
+        <move element="view.addto.wishlist" destination="product.info.main" after="product.info.addtocart"  />
+        <referenceContainer name="product.info.form.content" remove="true">
+            <referenceBlock name="product.info.addtocart" remove="true">
+            </referenceBlock>
+        </referenceContainer>
+        <referenceContainer name="columns.top">
+            <block class="Magento\Theme\Block\Html\Title" name="page.main.title" template="Magento_Theme::html/title.phtml"/>
+            <container name="info_bottom_title_container" htmlTag="div" htmlClass="info_bottom_title">
+                <block class="Magento\Framework\View\Element\Template" name="total_rates" template="Magento_Theme::html/detail/total_rates.phtml"/>
+            </container>
+        </referenceContainer>
+        <referenceContainer name="product.info.main">
+                <block class="Magento\Framework\View\Element\Template" name="old_price" template="Magento_Theme::html/detail/old_price.phtml" before="-"/>
+                <block class="Magento\Framework\View\Element\Template" name="type_discount" template="Magento_Theme::html/detail/type_discount.phtml" after="old_price"/>
+                <block class="Magento\Framework\View\Element\Template" name="price_with_multiple_products" template="Magento_Theme::html/detail/price_with_multiple_products.phtml" after="product.price.final"/>
+                <block class="Magento\Framework\View\Element\Template" name="product_short_descriptions" template="Magento_Theme::html/detail/product_short_descriptions.phtml" after="product.info.stock.sku"/>
+        </referenceContainer>
+        <referenceContainer name="columns">
+            <referenceBlock name="product.info.options.wrapper" remove="true"/>
+            <referenceBlock name="product.info.extrahint" remove="true"/>
+            <referenceBlock name="product.info.review" remove="true"/>
+        </referenceContainer>
+            <!-- <block class="Magento\Catalog\Block\ShortcutButtons\InCatalog" name="addtocart.shortcut.buttons.additional"/> -->
+        <referenceContainer name="content.aside">
+            <!-- start Recently Viewed Products -->
+                <block class="Magento\Framework\View\Element\Template" name="view_recent" template="Magento_Theme::html/home/product_list.phtml">
+                    <arguments>
+                        <argument name="main_title" xsi:type="string">Your Recently Viewed Products</argument>
+                        <argument name="is_have_tab" xsi:type="boolean">true</argument>
+                        <argument name="list_tab" xsi:type="array">
+                            <item name="tab_item_1" xsi:type="string">Review Product</item>
+                            <item name="tab_item_2" xsi:type="string">Tips and Tricks</item>
+                            <item name="tab_item_3" xsi:type="string">Promotions</item>
+                            <item name="tab_item_4" xsi:type="string">View All</item>
+                        </argument>
+                        <argument name="is_full_info" xsi:type="boolean">false</argument>
+                        <argument name="is_only_image" xsi:type="boolean">true</argument>
+                        <!-- list products -->
+                        <argument name="products_array" xsi:type="array">
+                            <item name="product_item_1" xsi:type="array">
+                                <item name="product_image" xsi:type="string">product_recently_viewed_01.jpg</item>
+                                <item name="product_name" xsi:type="string"></item>
+                                <item name="total_rate" xsi:type="string"></item>
+                                <item name="old_price" xsi:type="string"></item>
+                                <item name="new_price" xsi:type="string"></item>
+                                <item name="discount_percent" xsi:type="string"></item>
+                                <item name="name_of_discount_1" xsi:type="string"></item>
+                                <item name="name_of_discount_2" xsi:type="string"></item>
+                            </item>
+                             <item name="product_item_2" xsi:type="array">
+                                <item name="product_image" xsi:type="string">product_recently_viewed_02.jpg</item>
+                                <item name="product_name" xsi:type="string"></item>
+                                <item name="total_rate" xsi:type="string"></item>
+                                <item name="old_price" xsi:type="string"></item>
+                                <item name="new_price" xsi:type="string"></item>
+                                <item name="discount_percent" xsi:type="string"></item>
+                                <item name="name_of_discount_1" xsi:type="string"></item>
+                                <item name="name_of_discount_2" xsi:type="string"></item>
+                            </item>
+                             <item name="product_item_3" xsi:type="array">
+                                <item name="product_image" xsi:type="string">product_recently_viewed_03.jpg</item>
+                                <item name="product_name" xsi:type="string"></item>
+                                <item name="total_rate" xsi:type="string"></item>
+                                <item name="old_price" xsi:type="string"></item>
+                                <item name="new_price" xsi:type="string"></item>
+                                <item name="discount_percent" xsi:type="string"></item>
+                                <item name="name_of_discount_1" xsi:type="string"></item>
+                                <item name="name_of_discount_2" xsi:type="string"></item>
+                            </item>
+                             <item name="product_item_4" xsi:type="array">
+                                <item name="product_image" xsi:type="string">product_recently_viewed_04.jpg</item>
+                                <item name="product_name" xsi:type="string"></item>
+                                <item name="total_rate" xsi:type="string"></item>
+                                <item name="old_price" xsi:type="string"></item>
+                                <item name="new_price" xsi:type="string"></item>
+                                <item name="discount_percent" xsi:type="string"></item>
+                                <item name="name_of_discount_1" xsi:type="string"></item>
+                                <item name="name_of_discount_2" xsi:type="string"></item>
+                            </item>
+                             <item name="product_item_5" xsi:type="array">
+                                <item name="product_image" xsi:type="string">product_recently_viewed_05.jpg</item>
+                                <item name="product_name" xsi:type="string"></item>
+                                <item name="total_rate" xsi:type="string"></item>
+                                <item name="old_price" xsi:type="string"></item>
+                                <item name="new_price" xsi:type="string"></item>
+                                <item name="discount_percent" xsi:type="string"></item>
+                                <item name="name_of_discount_1" xsi:type="string"></item>
+                                <item name="name_of_discount_2" xsi:type="string"></item>
+                            </item>
+                            
+                        </argument>
+                    </arguments>
+                </block>
+                <!-- end Recently Viewed Products -->
+        </referenceContainer>
+</page>

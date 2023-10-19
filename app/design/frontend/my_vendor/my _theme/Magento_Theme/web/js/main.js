@@ -6,34 +6,23 @@ require(['jquery', 'slick'], function ($) {
             slidesToScroll: 1,
             autoplay: true,
             autoplaySpeed: 1500,
-            arrows: true, // Hiển thị nút next và prev
+            arrows: true, 
         });
     });
 });
 
 require(['jquery', 'slick'], function ($) {
     $(document).ready(function () {
-        $('.deals_of_day_wrapper').slick({
+        $('.product_list_wrapper').slick({
             slidesToShow: 5,
             slidesToScroll: 1,
             autoplay: true,
             autoplaySpeed: 1500,
-            arrows: true, // Hiển thị nút next và prev
+            arrows: true, 
         });
     });
 });
 
-require(['jquery', 'slick'], function ($) {
-    $(document).ready(function () {
-        $('.best_seller_wrapper_item').slick({
-            slidesToShow: 5,
-            slidesToScroll: 1,
-            autoplay: true,
-            autoplaySpeed: 1500,
-            arrows: true, // Hiển thị nút next và prev
-        });
-    });
-});
 
 require(['jquery', 'slick'], function ($) {
     $(document).ready(function () {
@@ -42,7 +31,7 @@ require(['jquery', 'slick'], function ($) {
             slidesToScroll: 1,
             autoplay: true,
             autoplaySpeed: 1500,
-            arrows: true, // Hiển thị nút next và prev
+            arrows: true, 
         });
     });
 });

@@ -1,0 +1,37 @@
+<?php 
+    $main_title = $block->getData("main_title");
+    $top_category_array = $block->getData("top_category_array");
+    // dd($main_title, $top_category_array);
+?>
+<h1 class="main_title"><?= $main_title ?></h1>
+<div class="row wrap_item">
+    <?php 
+    foreach ($top_category_array as $key => $top_category_item) : 
+        $top_category_image = $top_category_item['top_category_image'];
+        $top_category_title = $top_category_item['top_category_title'];
+        $top_category_desc = $top_category_item['top_category_desc'];
+    ?>
+        <div class="col-4 top_category_item_wrapper">
+            <div class="top_category_item">
+                <div class="col-6 p-0">
+                    <div class="top_category_image">
+                        <img src="<?php echo $block->getViewFileUrl("Magento_Theme::images/$top_category_image"); ?>"/>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <p class="top_category_title"><?= $top_category_title  ?></p>
+                    <div class="short_desc">
+                        <?php
+                            foreach ($top_category_desc as $value) {
+                                echo "<p> $value </p>";
+                            }
+                        ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <?php endforeach; ?>
+</div>
+    
+
+   
