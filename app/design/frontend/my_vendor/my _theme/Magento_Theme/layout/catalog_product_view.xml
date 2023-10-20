@@ -1,14 +1,14 @@
 <?xml version="1.0"?>
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
         <move element="product.info.sku" destination="info_bottom_title_container" />
-        <move element="product.price.final" destination="product.info.main" after="type_discount" />
-        <move element="product.info.stock.sku" destination="product.info.main" after="price_with_multiple_products" />
-        <move element="product.info.addtocart.additional" destination="product.info.main" after="price_with_multiple_products"/>
-        <move element="view.addto.wishlist" destination="product.info.main" after="product.info.addtocart"  />
-        <referenceContainer name="product.info.form.content" remove="true">
+        <move element="product.price.final" destination="product.info.main.top" after="type_discount" />
+        <move element="product.info.addtocart.additional" destination="product.info.action" before="accion_addto_wishlist" />
+        <!-- <move element="view.addto.wishlist" destination="product.info.action" after="product.info.addtocart.additional"  /> -->
+        <move element="product.info.stock.sku" destination="product.info.main.bottom" before="-" />
+        <!-- <referenceContainer name="product.info.form.content" remove="true">
             <referenceBlock name="product.info.addtocart" remove="true">
             </referenceBlock>
-        </referenceContainer>
+        </referenceContainer> -->
         <referenceContainer name="columns.top">
             <block class="Magento\Theme\Block\Html\Title" name="page.main.title" template="Magento_Theme::html/title.phtml"/>
             <container name="info_bottom_title_container" htmlTag="div" htmlClass="info_bottom_title">
@@ -16,10 +16,18 @@
             </container>
         </referenceContainer>
         <referenceContainer name="product.info.main">
+            <container name="product.info.main.top" htmlTag="div" htmlClass="product_info_main_top">
                 <block class="Magento\Framework\View\Element\Template" name="old_price" template="Magento_Theme::html/detail/old_price.phtml" before="-"/>
                 <block class="Magento\Framework\View\Element\Template" name="type_discount" template="Magento_Theme::html/detail/type_discount.phtml" after="old_price"/>
                 <block class="Magento\Framework\View\Element\Template" name="price_with_multiple_products" template="Magento_Theme::html/detail/price_with_multiple_products.phtml" after="product.price.final"/>
+                <container name="product.info.action" htmlTag="div" htmlClass="product_info_action_wrapper">
+
+                    <!-- <block class="Magento\Framework\View\Element\Template" name="accion_addto_wishlist" template="Magento_Theme::html/detail/accion_addto_wishlist.phtml" after="product.info.addtocart"/> -->
+                </container>
+            </container>
+            <container name="product.info.main.bottom" htmlTag="div" htmlClass="product_info_main_bottom" after="product.info.main.top">
                 <block class="Magento\Framework\View\Element\Template" name="product_short_descriptions" template="Magento_Theme::html/detail/product_short_descriptions.phtml" after="product.info.stock.sku"/>
+            </container>
         </referenceContainer>
         <referenceContainer name="columns">
             <referenceBlock name="product.info.options.wrapper" remove="true"/>

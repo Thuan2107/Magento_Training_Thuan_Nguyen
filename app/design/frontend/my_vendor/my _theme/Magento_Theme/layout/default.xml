@@ -2,7 +2,7 @@
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <referenceContainer name="header.panel">
         <referenceBlock name="top.links" remove="true"/>
-        <block class="Magento\Framework\View\Element\Template" name="header.panel.top" template="Magento_Theme::html/panel_header.phtml" />
+        <!-- <block class="Magento\Framework\View\Element\Template" name="header.panel.top" template="Magento_Theme::html/panel_header.phtml" /> -->
 
     </referenceContainer>
         
@@ -10,77 +10,52 @@
     
     <referenceContainer name="header-wrapper">
         <!--start block logo -->
-        <container name="logo_wrap" htmlTag="div">
-            <block class="Magento\Theme\Block\Html\Header\Logo" name="logo">
+        <!-- <container name="logo_wrap" htmlTag="div"> -->
+            <!-- <block class="Magento\Theme\Block\Html\Header\Logo" name="logo">
                 <arguments>
                     <argument name="logoPathResolver" xsi:type="object">Magento\Theme\ViewModel\Block\Html\Header\LogoPathResolver</argument>
                     <argument name="logo_size_resolver" xsi:type="object">Magento\Theme\ViewModel\Block\Html\Header\LogoSizeResolver</argument>
                 </arguments>
-            </block>  
-        </container>
+            </block>   -->
+        <!-- </container> -->
         <!--end block logo -->
 
         <!--start block search -->
-             <block class="Magento\Framework\View\Element\Template" name="top.search" as="topSearch" template="Magento_Search::form.mini.phtml">
+        <container name="search.wrapper" htmlTag="div" htmlClass="search_wrapper">
+            <block class="Magento\Framework\View\Element\Template" name="top.search" as="topSearch" template="Magento_Theme::html/header/search.phtml">
                 <arguments>
                     <argument name="configProvider" xsi:type="object">Magento\Search\ViewModel\ConfigProvider</argument>
                     <argument name="additionalSearchFormData" xsi:type="object">Magento\Search\ViewModel\AdditionalSearchFormData</argument>
                 </arguments>
-            </block>   
+            </block>
+        </container>
         <!--end block search -->
 
         <!--start container action -->
         <container name="header.action" label="Header Action"  htmlTag="div" htmlId="header_action" htmlClass="header_action">
-                    <container name="userlink" htmlTag="div" htmlClass="userlink" />
-                    <block class="Magento\Checkout\Block\Cart\Sidebar" name="minicart" as="minicart" after="logo" template="Magento_Checkout::cart/minicart.phtml">
-                                    <arguments>
-                                        <argument name="jsLayout" xsi:type="array">
-                                            <item name="types" xsi:type="array"/>
-                                            <item name="components" xsi:type="array">
-                                                <item name="minicart_content" xsi:type="array">
-                                                    <item name="component" xsi:type="string">Magento_Checkout/js/view/minicart</item>
-                                                    <item name="config" xsi:type="array">
-                                                        <item name="template" xsi:type="string">Magento_Checkout/minicart/content</item>
-                                                    </item>
-                                                    <item name="children" xsi:type="array">
-                                                        <item name="subtotal.container" xsi:type="array">
-                                                            <item name="component" xsi:type="string">uiComponent</item>
-                                                            <item name="config" xsi:type="array">
-                                                                <item name="displayArea" xsi:type="string">subtotalContainer</item>
-                                                            </item>
-                                                            <item name="children" xsi:type="array">
-                                                                <item name="subtotal" xsi:type="array">
-                                                                    <item name="component" xsi:type="string">uiComponent</item>
-                                                                    <item name="config" xsi:type="array">
-                                                                        <item name="template" xsi:type="string">Magento_Checkout/minicart/subtotal</item>
-                                                                    </item>
-                                                                </item>
-                                                            </item>
-                                                        </item>
-                                                        <item name="extra_info" xsi:type="array">
-                                                            <item name="component" xsi:type="string">uiComponent</item>
-                                                            <item name="config" xsi:type="array">
-                                                                <item name="displayArea" xsi:type="string">extraInfo</item>
-                                                            </item>
-                                                        </item>
-                                                        <item name="promotion" xsi:type="array">
-                                                            <item name="component" xsi:type="string">uiComponent</item>
-                                                            <item name="config" xsi:type="array">
-                                                                <item name="displayArea" xsi:type="string">promotion</item>
-                                                            </item>
-                                                        </item>
-                                                    </item>
-                                                </item>
-                                            </item>
-                                        </argument>
-                                    </arguments>
-                                    <container name="minicart.addons" label="Mini-cart promotion block"/>
-                                </block>    
+            
+             <container name="header.action.wishlist"  htmlTag="div" htmlClass="header_action_wishlist" before="-" >
+                <block class="Magento\Framework\View\Element\Template" name="header.action.wishlist.icon" template="Magento_Theme::html/header/header_action_wishlist_icon.phtml" before="-"/>
+            </container>
+            <container name="header.action.minicart"  htmlTag="div" htmlClass="header_action_minicart" after="header.action.wishlist" >
+            </container>
+
+            <container name="header.action.personel"  htmlTag="div" htmlClass="header_action_personel" after="-">
+                <container name="header.action.personel.icon"  htmlTag="div" htmlClass="personel_icon" >
+                    <block class="Magento\Framework\View\Element\Template" name="personel.icon" template="Magento_Theme::html/header/header_action_personel_icon.phtml"/>
+                </container>
+                <container name="header.action.personel.link"  htmlTag="div" htmlClass="personel_link" after="header.action.personel.icon" >
+            
+                </container>
+            </container>
+
         </container>
         <!--end container action -->
     </referenceContainer>
-    <move element="register-link" destination="userlink"  />
-    <move element="authorization-link" destination="userlink" />
+    <move element="minicart" destination="header.action.minicart"/>
+    
+    <move element="register-link" destination="header.action.personel.link"  />
+    <move element="authorization-link" destination="header.action.personel.link" />
 
     <!-- footer -->
     <referenceContainer name="footer" remove="true" />
