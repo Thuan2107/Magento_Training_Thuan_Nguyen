@@ -2,24 +2,10 @@
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <referenceContainer name="header.panel">
         <referenceBlock name="top.links" remove="true"/>
-        <!-- <block class="Magento\Framework\View\Element\Template" name="header.panel.top" template="Magento_Theme::html/panel_header.phtml" /> -->
+        <block class="Magento\Framework\View\Element\Template" name="header.panel.top" template="Magento_Theme::html/panel_header.phtml" />
 
     </referenceContainer>
-        
-
-    
     <referenceContainer name="header-wrapper">
-        <!--start block logo -->
-        <!-- <container name="logo_wrap" htmlTag="div"> -->
-            <!-- <block class="Magento\Theme\Block\Html\Header\Logo" name="logo">
-                <arguments>
-                    <argument name="logoPathResolver" xsi:type="object">Magento\Theme\ViewModel\Block\Html\Header\LogoPathResolver</argument>
-                    <argument name="logo_size_resolver" xsi:type="object">Magento\Theme\ViewModel\Block\Html\Header\LogoSizeResolver</argument>
-                </arguments>
-            </block>   -->
-        <!-- </container> -->
-        <!--end block logo -->
-
         <!--start block search -->
         <container name="search.wrapper" htmlTag="div" htmlClass="search_wrapper">
             <block class="Magento\Framework\View\Element\Template" name="top.search" as="topSearch" template="Magento_Theme::html/header/search.phtml">
@@ -30,7 +16,6 @@
             </block>
         </container>
         <!--end block search -->
-
         <!--start container action -->
         <container name="header.action" label="Header Action"  htmlTag="div" htmlId="header_action" htmlClass="header_action">
             

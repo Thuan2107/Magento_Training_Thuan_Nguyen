@@ -10,7 +10,7 @@
 
 /* Header */
 
-.header.content{
+/* .header.content{
     display: flex;
     justify-content: space-between;
     background-image: linear-gradient(to right, white, --main-color);
@@ -26,7 +26,7 @@
 .page-header .header.panel{
     padding: 0px !important;
     background-color: #93117B;
-}
+} */
 
 nav.navigation{
     background: #93117B;

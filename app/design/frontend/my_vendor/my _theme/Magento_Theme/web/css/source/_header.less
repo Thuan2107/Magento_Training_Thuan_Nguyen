@@ -1,0 +1,101 @@
+.center_vertical{
+    display: flex;
+    align-items: center;
+}
+
+.panel{
+    &.wrapper{
+        position: relative;
+        border-bottom: none;
+        position: relative;
+    }
+    &.wrapper::before{
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background: linear-gradient(90deg, #040F25 0%, #072758 100%);
+    }
+    &.header{
+        padding: 0;
+    }
+}
+
+.header{
+    &.content{
+        background: linear-gradient(91deg, #FFF 28.2%, #DB6B9A 54.15%, #AB1E7A 85.24%);
+        display: flex;
+        align-items: center;
+        max-width: 100%;
+        justify-content: space-evenly;
+        gap: 24px;
+        .logo{
+            margin: 0;
+        }
+        .search_wrapper{
+            .block-search{
+                width: 580px;
+                .control{
+                    width: 100%;
+                    position: relative;
+                    display: flex;
+                    padding: 0;
+                    .searchTerm {
+                        padding: 15px;
+                        height: 44px;
+                        border: none;
+                        border-radius: 8px 0px 0px 8px;
+                        outline: none;
+                        color: #9DBFAF;
+                      }
+
+                      .searchTerm:not([disabled]):focus{
+                        box-shadow: 0 0 3px 1px #93117B;
+                      }
+                      
+                      .searchTerm:focus{
+                        color: #93117B;
+                      }
+                      
+                      .searchButton {
+                        text-align: center;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 20px;
+                        letter-spacing: 0.8px;
+                        color: #93117B;
+                        height: 44px;
+                        background: #EDEDED;
+                        cursor: pointer;
+                        border-radius: 0px 8px 8px 0px;
+                      }
+                }
+            }
+        }
+        .header_action{
+            .center_vertical();
+            gap: 40px;
+            .header_action_minicart{
+                .minicart-wrapper{
+                    padding: 0;
+                }
+            }
+            .header_action_personel{
+                .center_vertical();
+                .personel_link{
+                    list-style: none;
+                }
+            }
+            .header_action_personel{
+                .personel_link{
+                    a{
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
+
