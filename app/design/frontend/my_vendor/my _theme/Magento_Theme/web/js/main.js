@@ -19,6 +19,25 @@ require(['jquery', 'slick'], function ($) {
             autoplay: true,
             autoplaySpeed: 1500,
             arrows: true, 
+            responsive: [
+                {
+                    breakpoint: 576,
+                    settings: {
+                        slidesToShow: 1,
+                    }
+
+                },{
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2,
+                    }
+                },{
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 3,
+                    }
+                }
+            ]
         });
     });
 });
@@ -32,6 +51,25 @@ require(['jquery', 'slick'], function ($) {
             autoplay: true,
             autoplaySpeed: 1500,
             arrows: true, 
+            responsive: [
+                {
+                    breakpoint: 576,
+                    settings: {
+                        slidesToShow: 1,
+                    }
+
+                },{
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2,
+                    }
+                },{
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 3,
+                    }
+                }
+            ]
         });
     });
 });

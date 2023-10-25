@@ -7,6 +7,12 @@
                 <block class="Magento\Framework\View\Element\Template" name="banner" template="Magento_Theme::html/home/banner.phtml">
                 </block>
                 <!-- end banner -->
+
+                <block class="Magento\Framework\View\Element\Template" name="accordion" template="Magento_Theme::html/jquery-widget/alert.phtml">
+                </block>
+
+
+
                 <!-- start top category -->
                 <block class="Magento\Framework\View\Element\Template" name="top_category_block" template="Magento_Theme::html/home/category_list.phtml">
                     <arguments>
@@ -716,3 +722,4 @@
             </container>
         </referenceContainer>
 </page>
+

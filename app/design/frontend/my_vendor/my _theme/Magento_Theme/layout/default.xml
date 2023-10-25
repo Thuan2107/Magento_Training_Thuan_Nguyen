@@ -5,6 +5,11 @@
         <block class="Magento\Framework\View\Element\Template" name="header.panel.top" template="Magento_Theme::html/panel_header.phtml" />
 
     </referenceContainer>
+
+    <referenceContainer name="content">
+        <block class="Magento\Framework\View\Element\Template"  template="Magento_Theme::requirejs.phtml" />
+    </referenceContainer>
+    
     <referenceContainer name="header-wrapper">
         <!--start block search -->
         <container name="search.wrapper" htmlTag="div" htmlClass="search_wrapper">
