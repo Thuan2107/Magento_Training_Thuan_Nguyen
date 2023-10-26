@@ -6,9 +6,7 @@
 
     </referenceContainer>
 
-    <referenceContainer name="content">
-        <block class="Magento\Framework\View\Element\Template"  template="Magento_Theme::requirejs.phtml" />
-    </referenceContainer>
+    
     
     <referenceContainer name="header-wrapper">
         <!--start block search -->

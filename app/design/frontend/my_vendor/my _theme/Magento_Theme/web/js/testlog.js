@@ -1,1 +1,1 @@
-console.log("Test log");
+console.log("Test log Map");

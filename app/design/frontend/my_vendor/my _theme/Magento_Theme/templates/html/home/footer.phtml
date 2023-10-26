@@ -1,35 +1,45 @@
 <div class="footer_wapper">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-3 col-md-4 col-xs-6">
-                <p class="footer_title">QUICK LINKs</p>
-                <ul>
-                    <li>Terms & Conditions</li>
-                    <li>Privacy Policies</li>
-                    <li>Delivery - Return - Warranty</li>
-                    <li>Payment Methods</li>
-                    <li>Loyalty Program</li>
-                </ul>
+        <div class="row" id="footer_wrap">
+            <div class="col-lg-3 col-md-4 col-xs-6 pl-0" data-role="collapsible">
+                <div data-role="trigger">
+                    <p class="footer_title">QUICK LINKs</p>
+                </div>
             </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 footer-company">
-                <p class="footer_title">COMPANY</p>
-                <ul>
-                    <li>About Us</li>
-                    <li>FAQs</li>
-                    
-                    <li>
-                        <img src="<?php echo $block->getViewFileUrl('Magento_Theme::images/footer_01.jpg'); ?>"/>
-                        <img src="<?php echo $block->getViewFileUrl('Magento_Theme::images/footer_02.jpg'); ?>"/>
-                    </li>
-                    <li>
-                        <img src="<?php echo $block->getViewFileUrl('Magento_Theme::images/footer_03.jpg'); ?>"/>
-                        <img src="<?php echo $block->getViewFileUrl('Magento_Theme::images/footer_04.jpg'); ?>"/>
-                        <img src="<?php echo $block->getViewFileUrl('Magento_Theme::images/footer_05.jpg'); ?>"/>
-                    </li>
-                </ul>
+            <ul data-role="content">
+                <li>Terms & Conditions</li>
+                <li>Privacy Policies</li>
+                <li>Delivery - Return - Warranty</li>
+                <li>Payment Methods</li>
+                <li>Loyalty Program</li>
+            </ul>
+            <div class="col-lg-3 col-md-4 col-xs-6 pl-0 footer-company" data-role="collapsible">
+                <div data-role="trigger">
+                    <p class="footer_title">COMPANY</p>
+                </div>
             </div>
-            <div class="col-lg-3 col-md-4 col-xs-6">
-                <p class="footer_title">Follow Us</p>
+
+            <ul data-role="content">
+                <li>About Us</li>
+                <li>FAQs</li>
+                
+                <li>
+                    <img src="<?php echo $block->getViewFileUrl('Magento_Theme::images/footer_01.jpg'); ?>"/>
+                    <img src="<?php echo $block->getViewFileUrl('Magento_Theme::images/footer_02.jpg'); ?>"/>
+                </li>
+                <li>
+                    <img src="<?php echo $block->getViewFileUrl('Magento_Theme::images/footer_03.jpg'); ?>"/>
+                    <img src="<?php echo $block->getViewFileUrl('Magento_Theme::images/footer_04.jpg'); ?>"/>
+                    <img src="<?php echo $block->getViewFileUrl('Magento_Theme::images/footer_05.jpg'); ?>"/>
+                </li>
+            </ul>
+
+            <div class="col-lg-3 col-md-4 col-xs-6 pl-0" data-role="collapsible">
+                <div data-role="trigger">
+                    <p class="footer_title">Follow Us</p>
+                </div>
+            </div>
+            <div data-role="content">
                 <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M8.5625 0.109375V2.46875H7.15625C6.61458 2.46875 6.26042 2.58854 6.09375 2.82812C5.9375 3.06771 5.85938 3.375 5.85938 3.75V5.4375H8.46875L8.125 8.07812H5.85938V14.8594H3.125V8.07812H0.84375V5.4375H3.125V3.48438C3.125 2.92188 3.20833 2.42708 3.375 2C3.54167 1.5625 3.77083 1.19792 4.0625 0.90625C4.36458 0.604167 4.72396 0.380208 5.14062 0.234375C5.55729 0.078125 6.02083 0 6.53125 0C7.01042 0 7.4375 0.015625 7.8125 0.046875C8.1875 0.0677083 8.4375 0.0885417 8.5625 0.109375Z" fill="white"/>
                 </svg>
@@ -51,20 +61,25 @@
                         <img src="<?php echo $block->getViewFileUrl('Magento_Theme::images/App Store Copy.png'); ?>"/>
                     </li>
                 </ul>
+            </div>
+                
+            <div class="col-lg-3 col-md-4 col-xs-6 pl-0" data-role="collapsible">
+                <div data-role="trigger">
+                    <p class="footer_title">CÔNG TY TNHH ĐIỆN TỬ SHARP VIỆT NAM</p>
+                </div>
+            </div>
 
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6">
-                <p class="footer_title">CÔNG TY TNHH ĐIỆN TỬ SHARP VIỆT NAM</p>
-                <ul>
-                    <li>Địa chỉ: T5-B03.07 & T5-B03.09, Lầu 3 Masteri Thảo Điền
-                        159 Xa Lộ Hà Nội, Phường Thảo Điền, T.P Thủ Đức, T.P Hồ Chí Minh, Việt Nam</li>
-                    <li>Email: cskh@cocorolife.vn</li>
-                    <li>MST: 0308159258 Do Sở kế hoạch Đầu tư TP.HCM cấp ngày 13/3/2009</li>
-                    <li>
-                        <img src="<?php echo $block->getViewFileUrl('Magento_Theme::images/footer_10.png'); ?>"/>
-                    </li>
-                </ul>
-            </div>
+            <ul data-role="content">
+                <li>Địa chỉ: T5-B03.07 & T5-B03.09, Lầu 3 Masteri Thảo Điền
+                    159 Xa Lộ Hà Nội, Phường Thảo Điền, T.P Thủ Đức, T.P Hồ Chí Minh, Việt Nam</li>
+                <li>Email: cskh@cocorolife.vn</li>
+                <li>MST: 0308159258 Do Sở kế hoạch Đầu tư TP.HCM cấp ngày 13/3/2009</li>
+                <li>
+                    <img src="<?php echo $block->getViewFileUrl('Magento_Theme::images/footer_10.png'); ?>"/>
+                </li>
+            </ul>
         </div>
     </div>
 </div>
+
+
