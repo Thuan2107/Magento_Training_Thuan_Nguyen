@@ -1,0 +1,25 @@
+<div class="component-wrapper">
+    <div class="field" style="margin-top: 20px;">
+        <h2 data-bind="i18n: 'TodoList'"></h2>
+        <div class="control">
+            <input name="customername"
+                id="todoValue"
+                type="text"
+                class="input-text"
+                data-bind="newTodo">
+        </div>
+    </div>
+    <div class="message_error" style="display: none; color: red" data-bind="text: message_error"></div>
+    <div class="primary" style="margin-top: 20px;">
+        <button type="button" class="action action-login secondary" data-bind="click: addNewTodoList">
+            <span data-bind="i18n: 'Thêm'"></span>
+        </button>
+    </div>
+
+    <ul class="customer-list" style="margin-top: 10px;list-style: none" data-bind="foreach: todoList">
+        <li>
+            <span data-bind="text: $index"></span>.
+            <span data-bind="text: name"></span>
+        </li>
+    </ul>
+</div>  

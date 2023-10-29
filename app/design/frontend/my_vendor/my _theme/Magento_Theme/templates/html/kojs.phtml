@@ -1,0 +1,76 @@
+<!-- <div id="custom-component" data-bind="scope:'customcomponent'">
+    <div class="component-wrapper">
+        <div class="field" style="margin-top: 20px;">
+            <h2 data-bind="i18n: 'TodoList'"></h2>
+            <div class="control">
+                <input name="customername"
+                    id="todoValue"
+                    type="text"
+                    class="input-text"
+                    data-bind="newTodo">
+            </div>
+        </div>
+        <div class="message_error" style="display: none; color: red" data-bind="text: message_error"></div>
+        <div class="primary" style="margin-top: 20px;">
+            <button type="button" class="action action-login secondary" data-bind="click: addNewTodoList">
+                <span data-bind="i18n: 'Thêm'"></span>
+            </button>
+        </div>
+
+        <ul class="customer-list" style="margin-top: 10px;list-style: none" data-bind="foreach: todoList">
+            <li>
+                <span data-bind="text: $index"></span>.
+                <span data-bind="text: name"></span>
+            </li>
+        </ul>
+    </div>
+</div>
+<script type="text/x-magento-init">
+{
+    "#custom-component": {
+        "Magento_Ui/js/core/app": {
+           "components": {
+                "customcomponent": {
+                    "component": "Magento_Theme/js/custom-component"
+                }
+            }
+        }
+    }
+}
+</script> -->
+<!--?php
+/* @var Codilar\HelloWorld\Block\Hello $block */
+?-->
+<div id="custom-component" data-bind="scope:'knockout-tutorial'">
+ <!-- ko template: getTemplate() --><!-- /ko -->
+</div>
+<script type="text/x-magento-init">
+ {
+     "#custom-component": {
+            "Magento_Ui/js/core/app": {
+                "components": {
+                    "knockout-tutorial": {
+                        "component": "Magento_Theme/js/custom-component",
+                        "template" : "Magento_Theme/template"
+                 }
+             }
+         }
+     }
+ }
+</script><div id="m2-component" data-bind="scope:'m2kocomponent'">
+    <!-- ko template: getTemplate() --><!-- /ko -->
+    <script type="text/x-magento-init">
+    {
+        "#m2-component": {
+            "Magento_Ui/js/core/app": {
+               "components": {
+                    "m2kocomponent": {
+                        "component": "Magento_Catalog/js/m2kocomponent",
+                        "template" : "Magento_Catalog/m2kocomponent-template"
+                    }
+                }
+            }
+        }
+    }
+    </script>
+</div>

@@ -6,7 +6,7 @@ define([
     'accordion_widget',
     'alert_widget',
     'tabs_widget',
-    'custom_accordion_footer'
+    'custom_accordion_footer',
 ], function($) {
     'use strict';
     $('.product_list_wrapper').slick({

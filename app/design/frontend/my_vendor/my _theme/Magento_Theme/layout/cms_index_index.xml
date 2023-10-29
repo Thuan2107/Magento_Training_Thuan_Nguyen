@@ -8,13 +8,16 @@
                 </block>
                 <!-- end banner -->
 
-                <block class="Magento\Framework\View\Element\Template" name="widget.accordion" template="Magento_Theme::html/jquery-widget/accordion.phtml">
+                <!-- <block class="Magento\Framework\View\Element\Template" name="widget.accordion" template="Magento_Theme::html/jquery-widget/accordion.phtml">
                 </block>
 
                 <block class="Magento\Framework\View\Element\Template" name="widget.alert" template="Magento_Theme::html/jquery-widget/alert.phtml">
                 </block>
 
-                 <block class="Magento\Framework\View\Element\Template" name="widget.tabs" template="Magento_Theme::html/jquery-widget/tabs.phtml">
+                <block class="Magento\Framework\View\Element\Template" name="widget.tabs" template="Magento_Theme::html/jquery-widget/tabs.phtml">
+                </block> -->
+            
+                <block class="Magento\Framework\View\Element\Template" name="demo.kojs" template="Magento_Theme::html/demo_knockoutjs.phtml">
                 </block>
 
                 <!-- start top category -->
