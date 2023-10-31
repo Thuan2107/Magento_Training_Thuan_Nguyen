@@ -4,9 +4,33 @@ define(['jquery', 'uiComponent', 'ko'], function ($, Component, ko) {
         initialize: function () {
             this._super();
             this.todoList = ko.observableArray([
-                // {name: "Todo1"},
-                // {name: "Todo2"},
-                // {name: "Todo3"},
+                [
+                    {
+                      "product_image" : "product_01.jpg",
+                      "product_name" : "S?a Du?ng Ph?c H?i Tái T?o Da B5 Neogence 50ml",
+                      "price" : "399,500 d"
+                    },
+                    {
+                      "product_image" : "product_01.jpg",
+                      "product_name" : "S?a Du?ng Ph?c H?i Tái T?o Da B5 Neogence 50ml",
+                      "price" : "399,500 d"
+                    },
+                    {
+                      "product_image" : "product_01.jpg",
+                      "product_name" : "S?a Du?ng Ph?c H?i Tái T?o Da B5 Neogence 50ml",
+                      "price" : "399,500 d"
+                    },
+                    {
+                      "product_image" : "product_01.jpg",
+                      "product_name" : "S?a Du?ng Ph?c H?i Tái T?o Da B5 Neogence 50ml",
+                      "price" : "399,500 d"
+                    },
+                    {
+                      "product_image" : "product_01.jpg",
+                      "product_name" : "S?a Du?ng Ph?c H?i Tái T?o Da B5 Neogence 50ml",
+                      "price" : "399,500 d"
+                    }
+                  ]
             ]);
             this.message_error = ko.observable('');
         },
@@ -15,16 +39,10 @@ define(['jquery', 'uiComponent', 'ko'], function ($, Component, ko) {
             if(newTodo != ''){
                 this.todoList.push({name: newTodo});
                 $('.message_error').hide();
-                console.log("true");
             }else{
                 $('.message_error').show();
                 this.message_error('Vui lòng nhập công việc');
-                console.log("false");
-
             }
         }
-
-
     })
-
 });

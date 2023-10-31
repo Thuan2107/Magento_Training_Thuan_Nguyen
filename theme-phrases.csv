@@ -1,0 +1,178 @@
+"We can't find products matching the selection.","We can't find products matching the selection."
+New,New
+Sale,Sale
+"Add to Wish List","Add to Wish List"
+"Add to Compare","Add to Compare"
+"Add to Cart","Add to Cart"
+"In stock","In stock"
+"Out of stock","Out of stock"
+"Learn More","Learn More"
+"Related Products","Related Products"
+"We found other products you might like!","We found other products you might like!"
+"More Choices:","More Choices:"
+"New Products","New Products"
+"Check items to add to the cart or","Check items to add to the cart or"
+"select all","select all"
+Qty,Qty
+Email,Email
+"Now Shopping by","Now Shopping by"
+Previous,Previous
+Remove,Remove
+"Remove This Item","Remove This Item"
+"Shop By","Shop By"
+"Clear All","Clear All"
+"Shopping Options","Shopping Options"
+"Sign Up for Our Newsletter:","Sign Up for Our Newsletter:"
+"Enter your email address","Enter your email address"
+Subscribe,Subscribe
+"<i class=""fa fa-long-arrow-right"" aria-hidden=""true""></i>","<i class=""fa fa-long-arrow-right"" aria-hidden=""true""></i>"
+"Recently Ordered","Recently Ordered"
+"Last Ordered Items","Last Ordered Items"
+"View All","View All"
+Home,Home
+Search,Search
+"I’m shopping for..","I’m shopping for.."
+"Free Delivery","Free Delivery"
+"For all orders over 1,000,000đ","For all orders over 1,000,000đ"
+"Authentic Products","Authentic Products"
+"Legitimate origin","Legitimate origin"
+"Secure Payment","Secure Payment"
+"100% secure payment","100% secure payment"
+"24/7 Suport","24/7 Suport"
+"Dedicated  support","Dedicated  support"
+"QUICK LINKs","QUICK LINKs"
+"Terms & Conditions","Terms & Conditions"
+"Privacy Policies","Privacy Policies"
+"Delivery - Return - Warranty","Delivery - Return - Warranty"
+"Payment Methods","Payment Methods"
+"Loyalty Program","Loyalty Program"
+COMPANY,COMPANY
+"About Us","About Us"
+FAQ,FAQ
+"Follow Us","Follow Us"
+"Our Mobile Apps","Our Mobile Apps"
+"CÔNG TY TNHH ĐIỆN TỬ SHARP VIỆT NAM","CÔNG TY TNHH ĐIỆN TỬ SHARP VIỆT NAM"
+"Địa chỉ: T5-B03.07 & T5-B03.09, Lầu 3 Masteri Thảo Điền
+                    159 Xa Lộ Hà Nội, Phường Thảo Điền, T.P Thủ Đức, T.P Hồ Chí Minh, Việt Nam","Địa chỉ: T5-B03.07 & T5-B03.09, Lầu 3 Masteri Thảo Điền
+                    159 Xa Lộ Hà Nội, Phường Thảo Điền, T.P Thủ Đức, T.P Hồ Chí Minh, Việt Nam"
+"Email: cskh@cocorolife.vn","Email: cskh@cocorolife.vn"
+"MST: 0308159258 Do Sở kế hoạch Đầu tư TP.HCM cấp ngày 13/3/2009","MST: 0308159258 Do Sở kế hoạch Đầu tư TP.HCM cấp ngày 13/3/2009"
+"Review Product","Review Product"
+"Tips & Tricks","Tips & Tricks"
+Promotions,Promotions
+"View all","View all"
+"How To Make A Fresh Juice Blended For Your Family?","How To Make A Fresh Juice Blended For Your Family?"
+Organic,Organic
+"Search entire store here...","Search entire store here..."
+"Welcome to %store_name","Welcome to %store_name"
+"%name,","%name,"
+"Welcome to %store_name.","Welcome to %store_name."
+"To sign in to our site, use these credentials during checkout or on the <a href=""%customer_url"">My Account</a> page:","To sign in to our site, use these credentials during checkout or on the <a href=""%customer_url"">My Account</a> page:"
+Email:,Email:
+Password:,Password:
+"Password you set when creating account","Password you set when creating account"
+"Forgot your account password? Click <a href=""%reset_url"">here</a> to reset it.","Forgot your account password? Click <a href=""%reset_url"">here</a> to reset it."
+"When you sign in to your account, you will be able to:","When you sign in to your account, you will be able to:"
+"Quick Checkout","Quick Checkout"
+"Proceed through checkout faster","Proceed through checkout faster"
+"Order Status","Order Status"
+"Check the status of orders","Check the status of orders"
+"Manage Addresses","Manage Addresses"
+"Store alternative addresses","Store alternative addresses"
+"For shipping to multiple family members and friends","For shipping to multiple family members and friends"
+"Order History","Order History"
+"View past orders","View past orders"
+Footer,Footer
+"<a href=%url_about_us>About Us</a>","<a href=%url_about_us>About Us</a>"
+"<a href=url_customer_service>Customer Service</a>","<a href=url_customer_service>Customer Service</a>"
+"<a href=""tel:%store_phone"">%store_phone</a>","<a href=""tel:%store_phone"">%store_phone</a>"
+"Hours of Operation:<br /><span class=""no-link"">%store_hours</span>.","Hours of Operation:<br /><span class=""no-link"">%store_hours</span>."
+"Credit memo for your %store_name order","Credit memo for your %store_name order"
+"Thank you for your order from %store_name.","Thank you for your order from %store_name."
+"You can check the status of your order by <a href=""%account_url"">logging into your account</a>.","You can check the status of your order by <a href=""%account_url"">logging into your account</a>."
+"If you have questions about your order, you can email us at <a href=""mailto:%store_email"">%store_email</a>.","If you have questions about your order, you can email us at <a href=""mailto:%store_email"">%store_email</a>."
+"Your Credit Memo #%creditmemo_id for Order #%order_id","Your Credit Memo #%creditmemo_id for Order #%order_id"
+"Billing Info","Billing Info"
+"Shipping Info","Shipping Info"
+"Payment Method","Payment Method"
+"Shipping Method","Shipping Method"
+"Update to your %store_name credit memo","Update to your %store_name credit memo"
+"Your order #%increment_id has been updated with a status of <strong>%order_status</strong>.","Your order #%increment_id has been updated with a status of <strong>%order_status</strong>."
+"Invoice for your %store_name order","Invoice for your %store_name order"
+"Your Invoice #%invoice_id for Order #%order_id","Your Invoice #%invoice_id for Order #%order_id"
+"Update to your %store_name invoice","Update to your %store_name invoice"
+"Your %store_name order confirmation","Your %store_name order confirmation"
+"%customer_name,","%customer_name,"
+"Once your package ships we will send you a tracking number.","Once your package ships we will send you a tracking number."
+"Your Order <span class=""no-link"">#%increment_id</span>","Your Order <span class=""no-link"">#%increment_id</span>"
+"Placed on <span class=""no-link"">%created_at</span>","Placed on <span class=""no-link"">%created_at</span>"
+"Update to your %store_name order","Update to your %store_name order"
+"Your %store_name order has shipped","Your %store_name order has shipped"
+"Your shipping confirmation is below. Thank you again for your business.","Your shipping confirmation is below. Thank you again for your business."
+"Your Shipment #%shipment_id for Order #%order_id","Your Shipment #%shipment_id for Order #%order_id"
+"Update to your %store_name shipment","Update to your %store_name shipment"
+"New Customer","New Customer"
+Save,Save
+"Demo KnockoutJS in Magento 2","Demo KnockoutJS in Magento 2"
+TodoList,TodoList
+Thêm,Thêm
+Accept,Accept
+"New Action","New Action"
+Overview,Overview
+"Account Dashboard","Account Dashboard"
+"Address Book","Address Book"
+"Account Information","Account Information"
+"Top Categories Of The Month","Top Categories Of The Month"
+"TV Televisions","TV Televisions"
+"Smart TV","Smart TV"
+"4K Ultra HD TVs","4K Ultra HD TVs"
+"LED TVs","LED TVs"
+"OLED TVs","OLED TVs"
+Accessories,Accessories
+"Personal Care","Personal Care"
+"Face mask","Face mask"
+" shield"," shield"
+"Small Appliances","Small Appliances"
+"Microwave oven","Microwave oven"
+"Air Fryer","Air Fryer"
+"Rice cooker","Rice cooker"
+"Kettle ","Kettle "
+"Jar pot","Jar pot"
+"Consumer Goods","Consumer Goods"
+"Washing and Cleanser","Washing and Cleanser"
+"Home care","Home care"
+"Hygienic care","Hygienic care"
+"Insect treatment","Insect treatment"
+"Food and Drink","Food and Drink"
+Fruit,Fruit
+Confectionary,Confectionary
+Beverage,Beverage
+Seasoning,Seasoning
+"Dietary Supplement","Dietary Supplement"
+"Deals Of The Day","Deals Of The Day"
+"Sữa Dưỡng Phục Hồi Tái Tạo Da B5 Neogence 50ml","Sữa Dưỡng Phục Hồi Tái Tạo Da B5 Neogence 50ml"
+185,185
+"Member Wednesday","Member Wednesday"
+"From 00:00 to 15:00","From 00:00 to 15:00"
+"Best Seller","Best Seller"
+"Top 20","Top 20"
+Televisions,Televisions
+Audio,Audio
+Kitchen,Kitchen
+"Dietary Suplement","Dietary Suplement"
+"Multi cooker 9 Liters","Multi cooker 9 Liters"
+"Sharp Dynabook VE1.5","Sharp Dynabook VE1.5"
+"New Zealand Cherry","New Zealand Cherry"
+"Sharp Face mask FDA certified","Sharp Face mask FDA certified"
+"Sharp Healsio AX-1700","Sharp Healsio AX-1700"
+"Cirtus Juicer","Cirtus Juicer"
+Blender,Blender
+"Face shield","Face shield"
+"Electric Oven","Electric Oven"
+Microwave,Microwave
+"Air fryer","Air fryer"
+"Air Purifier","Air Purifier"
+Refrigerator,Refrigerator
+"Your Recently Viewed Products","Your Recently Viewed Products"
+"Tips and Tricks","Tips and Tricks"
+"3 Columns Double Footer","3 Columns Double Footer"
