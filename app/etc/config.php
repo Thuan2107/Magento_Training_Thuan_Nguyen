@@ -224,6 +224,7 @@ return [
         'Magento_MediaGalleryUiApi' => 1,
         'Magento_CatalogWidget' => 1,
         'Magento_MessageQueue' => 1,
+        'Magento_MistakeModule' => 1,
         'Magento_GroupedProductSampleData' => 1,
         'Magento_MsrpConfigurableProduct' => 1,
         'Magento_MsrpGroupedProduct' => 1,
@@ -350,6 +351,7 @@ return [
         'Mageplaza_Smtp' => 1,
         'PayPal_Braintree' => 1,
         'PayPal_BraintreeGraphQl' => 1,
-        'Temando_ShippingRemover' => 1
+        'Temando_ShippingRemover' => 1,
+        'VendorName_DependentModule' => 0
     ]
 ];

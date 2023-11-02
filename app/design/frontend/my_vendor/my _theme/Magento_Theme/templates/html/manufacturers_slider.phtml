@@ -1,0 +1,18 @@
+
+<div id="manufacturers-component" data-bind="scope:'manufacturerscomponent'">
+    <!-- ko template: getTemplate() --><!-- /ko -->
+</div>
+<script type="text/x-magento-init">
+{
+    "#manufacturers-component": {
+        "Magento_Ui/js/core/app": {
+           "components": {
+                "manufacturerscomponent": {
+                    "component": "Magento_Theme/js/manufacturers-component",
+                    "template" : "Magento_Theme/manufacturers-component-template"
+                }
+            }
+        }
+    }
+}
+</script>

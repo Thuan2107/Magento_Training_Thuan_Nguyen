@@ -17,9 +17,11 @@
                 <block class="Magento\Framework\View\Element\Template" name="widget.tabs" template="Magento_Theme::html/jquery-widget/tabs.phtml">
                 </block> -->
             
-                <!-- <block class="Magento\Framework\View\Element\Template" name="demo.kojs" template="Magento_Theme::html/demo_knockoutjs.phtml">
+                <!-- <block class="Magento\Framework\View\Element\Template" name="demo_knockoutjs" template="Magento_Theme::html/demo_knockoutjs.phtml">
                 </block> -->
-
+                
+                <block class="Magento\Framework\View\Element\Template" name="manufacturers_slider" template="Magento_Theme::html/manufacturers_slider.phtml">
+                </block>
                 <!-- start top category -->
                 <block class="Magento\Framework\View\Element\Template" name="top_category_block" template="Magento_Theme::html/home/category_list.phtml">
                     <arguments>

@@ -1,0 +1,27 @@
+<h1  data-bind="i18n: 'Top Products'"></h1>
+<div class="col-12">
+    <div class="product_list_wrapper" data-bind="foreach: {data: product_list, afterRender: productSlider}">
+        <div class="item">
+            <div class="thumb-wrapper">
+                <div class="img-box">
+                    <img data-bind="attr:{src: product_image}" class="img-fluid" alt="">									
+                </div>
+                <div class="thumb-content">
+                    <h4 data-bind="text: product_name"></h4>									
+                    <div class="star-rating">
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                        </ul>
+                    </div>
+                    <p class="item-price"><strike data-bind="text: old_price"></strike> <b data-bind="text: new_price"></b></p>
+                    <a href="#" class="btn btn-primary text-white" data-bind="i18n: 'Add to Cart'"></a>
+                </div>						
+            </div>
+        </div>
+       
+    </div>
+</div>
